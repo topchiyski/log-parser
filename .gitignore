@@ -1,0 +1,10 @@
+# Gradle
+.gradle/
+build/
+
+# Old javac output folder
+out/
+
+# IntelliJ (the project is imported from Gradle)
+.idea/
+*.iml

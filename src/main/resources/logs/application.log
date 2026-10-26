@@ -1,0 +1,1510 @@
+2026-10-26 08:00:31 INFO Email sent to user-1051
+2026-10-26 08:00:51 INFO Scheduled job report-builder completed in 69s
+2026-10-26 08:01:19 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 08:01:32 INFO Order 864650 shipped
+2026-13-01 09:00:00 INFO Month out of range
+2026-10-26 08:01:41 INFO Payment 637248 authorized
+2026-10-26 08:01:55 INFO User user-1029 logged out
+2026-10-26 08:02:08 INFO Payment 844316 authorized
+2026-10-26 08:02:17 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 08:02:50 INFO User user-1141 logged out
+2026-10-26 08:02:54 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 08:03:15 INFO Scheduled job report-builder completed in 74s
+2026-10-26 08:03:44 INFO Scheduled job report-builder completed in 11s
+2026-10-26 08:04:04 INFO Order 263250 created for user-1111
+2026-10-26 08:04:19 INFO POST /api/search 201 in 487ms
+2026-10-26 08:04:34 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 08:05:05 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 08:05:25 DEBUG Cache miss for product 3493
+2026-10-26 08:05:31 DEBUG SQL query took 115ms
+2026-10-26 08:05:44 WARNING Deprecated API version v1 called
+2026-10-26 08:06:16 INFO Order 453813 created for user-1068
+2026-10-26 08:06:31 DEBUG Cache hit ratio: 0.77
+2026-10-26 08:06:36 DEBUG SQL query took 32ms
+2026-10-26 08:07:08 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 08:07:23 DEBUG Cache miss for product 468
+2026-10-26 08:07:43 DEBUG Connection pool: 5/50 in use
+2026-10-26 08:07:51 INFO Payment 721181 authorized
+2026-10-26 08:08:10 DEBUG SQL query took 81ms
+2026-10-26 08:08:19 DEBUG SQL query took 84ms
+2026-10-26 08:08:25 INFO Order 307140 shipped
+2026-10-26 08:08:50 INFO POST /api/products 201 in 511ms
+2026-10-26 08:09:16 INFO Order 117126 shipped
+2026-10-26 08:09:35 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 08:09:50 DEBUG Session 57899332 refreshed
+2026-10-26 08:10:02 DEBUG Session 73124969 refreshed
+2026-10-26 08:10:25 ERROR Inventory service returned 503
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+    at com.example.payment.PaymentController.checkout(PaymentController.java:88)
+    at com.example.orders.OrderService.place(OrderService.java:211)
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+2026-10-26 08:10:53 DEBUG Connection pool: 6/50 in use
+2026-10-26 08:11:31 DEBUG Cache miss for product 3614
+2026-10-26 08:11:55 WARNING Response time above 2s for /api/cart
+2026-10-26 08:12:24 WARNING Disk usage at 87%
+2026-10-26 08:12:29 INFO User user-1277 logged out
+2026-10-26 08:13:03 INFO Payment 890713 authorized
+2026-10-26 08:13:38 INFO POST /api/products 201 in 389ms
+2026-10-26 08:13:56 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 08:14:03 INFO GET /api/search 200 in 310ms
+2026-10-26 08:14:28 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 08:14:53 INFO Scheduled job email-digest completed in 13s
+2026-10-26 08:15:07 INFO Email sent to user-1218
+2026-10-26 25:10:00 INFO Hour out of range
+2026-10-26 08:15:30 INFO Order 718163 shipped
+2026-10-26 08:16:01 INFO Order 622469 shipped
+2026-10-26 08:16:26 INFO User user-1271 logged in
+2026-10-26 08:16:49 WARNING Response time above 2s for /api/orders
+2026-10-26 08:17:21 DEBUG Session 62980941 refreshed
+2026-10-26 08:17:32 INFO User user-1252 logged out
+2026-10-26 08:18:03 INFO GET /api/users 200 in 66ms
+2026-10-26 08:18:17 DEBUG SQL query took 60ms
+2026-10-26 08:18:47 INFO User user-1385 logged out
+2026-10-26 08:19:05 INFO Email sent to user-1281
+2026-10-26 08:19:40 INFO Order 446586 created for user-1192
+2026-10-26 08:19:59 INFO Order 150844 created for user-1327
+2026-10-26 08:20:03 DEBUG Connection pool: 5/50 in use
+2026-10-26 08:20:07 INFO Order 854966 created for user-1302
+2026-10-26 08:20:36 INFO POST /api/products 201 in 233ms
+2026-10-26 08:20:45 INFO User user-1079 logged in
+2026-10-26 08:20:56 WARNING Deprecated API version v1 called
+2026-10-26 08:21:18 INFO POST /api/products 201 in 303ms
+2026-10-26 08:21:38 INFO Payment 597395 authorized
+2026-10-26 08:21:59 DEBUG Connection pool: 8/50 in use
+2026-10-26 08:22:08 INFO Payment 156924 authorized
+2026-10-26 08:22:22 INFO Email sent to user-1354
+2026-10-26 08:22:51 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 08:23:15 INFO Email sent to user-1253
+2026-10-26 08:23:19 DEBUG Cache miss for product 4351
+2026-10-26 08:23:44 INFO Order 750404 shipped
+2026-10-26 08:24:08 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 08:24:25 INFO POST /api/orders 201 in 185ms
+2026-10-26 08:24:55 INFO POST /api/orders 201 in 284ms
+2026-10-26 08:25:11 DEBUG Session 68845901 refreshed
+2026-10-26 08:25:38 INFO User user-1280 logged out
+2026-10-26 08:25:56 DEBUG Cache miss for product 2213
+2026-10-26 08:26:22 INFO User user-1067 logged out
+2026-10-26 08:27:00 DEBUG Connection pool: 18/50 in use
+2026-10-26 08:27:08 DEBUG Connection pool: 11/50 in use
+2026-10-26 08:27:27 INFO GET /api/cart 200 in 237ms
+2026-10-26 08:27:38 DEBUG SQL query took 17ms
+2026-10-26 08:27:54 WARNING Slow query detected: 2054ms
+2026-10-26 08:28:10 INFO Order 964726 created for user-1243
+2026-10-26 08:28:38 INFO Order 217682 created for user-1141
+2026-10-26 08:28:49 INFO User user-1082 logged in
+2026-10-26 08:29:04 WARNING Slow query detected: 1597ms
+2026-10-26 08:29:40 INFO Order 635794 shipped
+2026-10-26 08:29:44 INFO User user-1068 logged in
+2026-10-26 08:29:58 INFO Payment 512857 authorized
+2026-10-26 08:30:12 INFO Email sent to user-1333
+2026-10-26 08:30:44 INFO Email sent to user-1375
+2026-10-26 08:31:21 INFO Email sent to user-1253
+2026-10-26 08:31:34 INFO User user-1232 logged out
+2026-10-26 08:31:47 INFO GET /api/products 200 in 108ms
+2026-10-26 08:32:20 WARNING Disk usage at 84%
+2026-10-26 08:32:25 INFO Order 559978 created for user-1009
+2026-10-26 08:32:40 DEBUG Session 89557590 refreshed
+2026-10-26 08:32:48 INFO Email sent to user-1165
+2026-10-26 08:33:15 INFO Email sent to user-1260
+2026-10-26 08:33:22 INFO Scheduled job report-builder completed in 89s
+2026-10-26 08:34:00 INFO Order 638754 created for user-1032
+2026-10-26 08:34:07 WARNING Response time above 2s for /api/users
+2026-10-26 08:34:43 INFO User user-1202 logged in
+2026-10-26 08:34:49 DEBUG Cache miss for product 3038
+2026-10-26 08:35:03 INFO Order 752193 shipped
+2026-10-26 08:35:11 INFO Order 266835 created for user-1069
+2026-10-26 08:35:22 INFO User user-1236 logged out
+2026-10-26 08:35:39 WARNING Deprecated API version v1 called
+2026-10-26 08:35:43 INFO POST /api/cart 201 in 140ms
+2026-10-26 08:35:57 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 08:36:23 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 08:37:01 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 08:37:11 DEBUG SQL query took 78ms
+2026-10-26 08:37:25 INFO POST /api/search 201 in 508ms
+2026-10-26 08:37:49 INFO Payment 907137 authorized
+2026-10-26 08:38:14 INFO Order 316288 shipped
+2026-10-26 08:38:44 INFO GET /api/search 200 in 98ms
+2026-10-26 08:39:14 DEBUG Session 28383858 refreshed
+2026-10-26 08:39:36 DEBUG Session 35185098 refreshed
+2026-10-26 08:39:59 INFO User user-1133 logged out
+2026-10-26 08:40:09 INFO Email sent to user-1390
+2026-10-26 08:40:24 INFO Email sent to user-1188
+2026-10-26 08:40:58 INFO GET /api/cart 200 in 309ms
+2026-10-26 08:41:15 INFO Order 332114 created for user-1067
+2026-10-26 08:41:26 DEBUG Session 79273358 refreshed
+2026-10-26 08:41:54 WARNING Deprecated API version v1 called
+2026-10-26 08:42:20 INFO Scheduled job invoice-export completed in 78s
+2026-10-26 08:42:35 INFO Order 107067 shipped
+2026-10-26 08:42:55 INFO Email sent to user-1292
+2026-10-26 08:43:07 WARNING Disk usage at 83%
+2026-10-26 08:43:41 INFO POST /api/users 201 in 407ms
+2026-10-26 08:44:05 DEBUG Connection pool: 14/50 in use
+2026-10-26 08:44:14 DEBUG SQL query took 47ms
+2026-10-26 08:44:33 INFO Order 674891 created for user-1373
+2026-10-26 08:45:09 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 08:45:15 INFO Scheduled job email-digest completed in 63s
+2026-10-26 08:45:50 DEBUG SQL query took 106ms
+2026-10-26 08:46:28 INFO Scheduled job report-builder completed in 57s
+2026-10-26 08:46:40 INFO Scheduled job stock-sync completed in 22s
+2026-10-26 08:47:00 INFO GET /api/orders 200 in 285ms
+2026-10-26 08:47:16 DEBUG SQL query took 99ms
+2026-10-26 08:47:35 INFO Scheduled job report-builder completed in 77s
+2026-10-26 08:47:43 INFO Order 783466 created for user-1276
+2026-10-26 08:48:06 INFO Order 199369 created for user-1246
+2026-10-26 08:48:12 INFO Payment 666513 authorized
+2026-10-26 08:48:19 INFO Email sent to user-1270
+2026-10-26 08:48:54 INFO User user-1031 logged out
+2026-10-26 08:49:10 INFO Email sent to user-1288
+2026-10-26 08:49:31 DEBUG Cache hit ratio: 0.83
+2026-10-26 08:49:42 INFO Scheduled job invoice-export completed in 15s
+2026-10-26 08:50:16 DEBUG Connection pool: 11/50 in use
+2026-10-26 08:50:39 DEBUG Connection pool: 7/50 in use
+2026-10-26 08:50:49 INFO Payment 228751 authorized
+2026-10-26 08:51:19 INFO POST /api/orders 201 in 160ms
+2026-10-26 08:51:57 INFO Scheduled job invoice-export completed in 41s
+2026-10-26 08:52:02 INFO User user-1189 logged out
+2026-10-26 08:52:28 INFO User user-1118 logged in
+2026-10-26 08:52:42 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 08:52:57 INFO Scheduled job email-digest completed in 87s
+2026-10-26 08:53:01 INFO Order 407513 created for user-1014
+2026-10-26 08:53:09 DEBUG SQL query took 39ms
+2026-10-26 08:53:39 INFO Email sent to user-1391
+2026-10-26 08:54:10 INFO POST /api/cart 201 in 81ms
+2026-10-26 08:54:27 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 08:54:33 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 08:54:48 INFO Payment 754600 authorized
+2026-10-26 08:54:55 INFO GET /api/orders 200 in 357ms
+2026-10-26 08:55:10 DEBUG Cache hit ratio: 0.83
+2026-10-26 08:55:32 DEBUG Cache hit ratio: 0.71
+2026-10-26 08:55:52 INFO Scheduled job report-builder completed in 83s
+2026-10-26 08:56:26 INFO User user-1117 logged out
+2026-10-26 08:56:32 INFO Payment 976022 authorized
+2026-10-26 08:57:02 ERROR Failed to process payment: timeout
+2026-10-26 08:57:14 ERROR Payment retry failed
+    at com.example.payment.PaymentController.checkout(PaymentController.java:88)
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+Caused by: java.net.SocketTimeoutException: Read timed out
+2026-10-26 08:57:34 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 08:57:48 INFO Payment 484447 authorized
+2026-10-26 08:58:12 INFO Payment 167191 authorized
+2026-10-26 08:58:45 INFO Order 431784 shipped
+2026-10-26 08:59:12 WARNING Disk usage at 80%
+2026-10-26 08:59:26 INFO GET /api/users 200 in 51ms
+2026-10-26 08:59:32 INFO Email sent to user-1228
+2026-10-26 09:00:07 INFO Email sent to user-1033
+2026-10-26 09:00:32 WARNING Disk usage at 89%
+2026-10-26 09:01:08 INFO GET /api/products 200 in 160ms
+2026-10-26 09:01:46 INFO Email sent to user-1394
+2026-10-26 09:02:19 DEBUG SQL query took 101ms
+2026-10-26 10:00:00 TRACE Unknown level
+2026-10-26 09:02:36 WARNING Response time above 2s for /api/users
+2026-10-26 09:02:47 INFO POST /api/users 201 in 71ms
+2026-10-26 09:03:01 WARNING Disk usage at 92%
+2026-10-26 09:03:06 DEBUG Session 18142742 refreshed
+2026-10-26 09:03:27 DEBUG Connection pool: 7/50 in use
+2026-10-26 09:03:45 INFO GET /api/users 200 in 113ms
+2026-10-26 09:03:58 INFO Payment 517575 authorized
+2026-10-26 09:04:06 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 09:04:13 INFO Scheduled job invoice-export completed in 64s
+2026-10-26 09:04:21 INFO Email sent to user-1395
+2026-10-26 09:04:49 WARNING Deprecated API version v1 called
+2026-10-26 09:05:16 ERROR Inventory service returned 503
+    at com.example.orders.OrderService.place(OrderService.java:211)
+    at com.example.payment.PaymentController.checkout(PaymentController.java:88)
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+Caused by: java.net.SocketTimeoutException: Read timed out
+2026-10-26 09:05:26 INFO Payment 302056 authorized
+2026-10-26 09:05:56 INFO Scheduled job invoice-export completed in 88s
+2026-10-26 09:06:03 INFO Order 445276 shipped
+2026-10-26 09:06:28 INFO Order 361534 created for user-1161
+2026-10-26 09:06:53 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 09:07:24 INFO User user-1250 logged out
+2026-10-26 09:07:57 INFO User user-1004 logged in
+2026-10-26 09:08:02 INFO Payment 684023 authorized
+2026-10-26 09:08:15 WARNING Deprecated API version v1 called
+2026-10-26 09:08:35 WARNING Disk usage at 87%
+2026-10-26 09:09:00 DEBUG Cache miss for product 1802
+2026-10-26 09:09:35 DEBUG SQL query took 8ms
+2026-10-26 09:09:48 DEBUG SQL query took 102ms
+2026-10-26 09:10:19 WARNING Response time above 2s for /api/cart
+2026-10-26 09:10:55 INFO Order 405167 shipped
+2026-10-26 09:11:28 WARNING Deprecated API version v1 called
+2026-10-26 09:11:35 WARNING Response time above 2s for /api/users
+2026-10-26 09:11:46 INFO Email sent to user-1000
+2026-10-26 09:12:02 INFO User user-1234 logged out
+2026-10-26 09:12:33 DEBUG Connection pool: 18/50 in use
+2026-10-26 09:13:00 INFO Scheduled job stock-sync completed in 68s
+2026-10-26 09:13:10 INFO Scheduled job report-builder completed in 17s
+2026-10-26 09:13:17 INFO Order 193523 shipped
+2026-10-26 09:13:37 ERROR Cache eviction failed
+2026-10-26 09:13:54 INFO Scheduled job report-builder completed in 48s
+2026-10-26 09:14:04 INFO Email sent to user-1116
+2026-10-26 09:14:13 WARNING Deprecated API version v1 called
+2026-10-26 09:14:42 WARNING Response time above 2s for /api/search
+2026-10-26 09:15:04 DEBUG SQL query took 34ms
+2026-10-26 09:15:37 DEBUG Cache hit ratio: 0.91
+2026-10-26 09:15:41 ERROR Failed to process payment: timeout
+    at java.base/java.lang.Thread.run(Thread.java:1583)
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+2026-10-26 09:16:15 INFO Email sent to user-1118
+2026-10-26 09:16:50 INFO Scheduled job invoice-export completed in 1s
+2026-10-26 09:17:12 DEBUG Cache miss for product 3758
+2026-10-26 09:17:22 INFO User user-1327 logged in
+2026-10-26 09:17:42 INFO Order 136440 shipped
+2026-10-26 09:18:10 INFO Order 341272 created for user-1029
+2026-10-26 09:18:25 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 09:18:50 DEBUG Session 49027769 refreshed
+2026-10-26 09:19:00 INFO Scheduled job invoice-export completed in 37s
+2026-10-26 09:19:11 ERROR Could not send email: SMTP connection refused
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+    at com.example.orders.OrderService.place(OrderService.java:211)
+2026-10-26 09:19:37 INFO POST /api/checkout 201 in 290ms
+2026-10-26 09:19:46 INFO Order 228894 shipped
+2026-10-26 09:20:00 INFO Scheduled job email-digest completed in 86s
+2026-10-26 09:20:37 INFO User user-1058 logged in
+2026-10-26 09:21:14 DEBUG Cache miss for product 3554
+2026-10-26 09:21:50 DEBUG SQL query took 88ms
+2026-10-26 09:22:24 INFO User user-1351 logged in
+2026-10-26 09:22:48 INFO POST /api/users 201 in 46ms
+2026-10-26 09:23:21 INFO User user-1195 logged out
+2026-10-26 09:23:35 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 09:24:07 INFO User user-1335 logged in
+2026-10-26 09:24:24 INFO Order 376565 created for user-1254
+2026-10-26 09:24:38 INFO Payment 316961 authorized
+2026-10-26 09:25:08 INFO Email sent to user-1226
+2026-10-26 09:25:43 INFO Email sent to user-1380
+2026-10-26 09:26:12 INFO Payment 581218 authorized
+2026-10-26 09:26:35 INFO POST /api/cart 201 in 526ms
+2026-10-26 09:26:40 INFO POST /api/search 201 in 360ms
+2026-10-26 09:27:17 INFO Order 921374 created for user-1391
+2026-10-26 09:27:45 INFO Order 283918 created for user-1160
+2026-10-26 09:27:54 DEBUG Connection pool: 5/50 in use
+2026-10-26 09:28:29 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 09:28:55 DEBUG Connection pool: 15/50 in use
+2026-10-26 09:29:29 INFO Order 851769 created for user-1267
+2026-10-26 09:29:58 INFO User user-1011 logged out
+2026-10-26 09:30:14 INFO User user-1327 logged out
+2026-10-26 09:30:34 DEBUG SQL query took 56ms
+2026-10-26 09:30:57 DEBUG SQL query took 49ms
+2026-10-26 09:31:20 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 09:31:52 WARNING Deprecated API version v1 called
+2026-10-26 09:32:27 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 09:32:58 INFO User user-1184 logged out
+2026-10-26 09:33:14 INFO User user-1084 logged in
+2026-10-26 09:33:41 INFO GET /api/search 200 in 128ms
+2026-10-26 09:34:07 DEBUG Session 36909614 refreshed
+2026-10-26 09:34:45 INFO Payment 337715 authorized
+2026-10-26 09:35:00 DEBUG Session 86798494 refreshed
+2026-10-26 09:35:35 INFO Order 515351 shipped
+2026-10-26 09:35:55 WARNING Slow query detected: 2600ms
+2026-10-26 09:36:24 INFO User user-1258 logged out
+2026-10-26 09:36:30 INFO Scheduled job stock-sync completed in 63s
+2026-10-26 09:36:56 INFO Order 118289 created for user-1382
+2026-10-26 09:37:33 INFO User user-1333 logged in
+2026-10-26 09:38:11 DEBUG SQL query took 60ms
+2026-10-26 09:38:40 INFO POST /api/products 201 in 54ms
+2026-10-26 09:39:13 INFO Scheduled job email-digest completed in 9s
+2026-10-26 09:39:32 INFO Email sent to user-1192
+2026-10-26 09:39:51 DEBUG Cache miss for product 400
+2026-10-26 09:39:56 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 09:40:01 INFO POST /api/products 201 in 66ms
+2026-10-26 09:40:38 DEBUG Session 65622635 refreshed
+2026-10-26 09:41:12 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 09:41:37 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 09:42:15 INFO Order 923512 created for user-1268
+2026-10-26 09:42:41 INFO Payment 164205 authorized
+2026-10-26 09:43:04 WARNING Response time above 2s for /api/checkout
+2026-10-26 09:43:09 INFO Payment 121043 authorized
+2026-10-26 09:43:31 WARNING Deprecated API version v1 called
+2026-10-26 09:44:06 INFO GET /api/search 200 in 64ms
+2026-10-26 09:44:32 INFO Order 540419 shipped
+2026-10-26 09:45:10 INFO Order 867488 shipped
+2026-10-26 09:45:35 DEBUG Cache hit ratio: 0.61
+2026-10-26 09:46:05 INFO Order 503769 shipped
+2026-10-26 09:46:12 INFO Scheduled job email-digest completed in 41s
+2026-10-26 09:46:32 INFO Email sent to user-1142
+2026-10-26 09:47:02 DEBUG Cache miss for product 3325
+2026-10-26 09:47:38 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 09:47:46 INFO Order 915336 created for user-1269
+2026-10-26 09:48:00 INFO POST /api/products 201 in 424ms
+2026-10-26 09:48:11 INFO GET /api/orders 200 in 253ms
+2026-10-26 09:48:18 INFO Email sent to user-1099
+2026-10-26 09:48:47 WARNING Disk usage at 85%
+2026-10-26 09:48:51 DEBUG SQL query took 92ms
+2026-10-26 09:49:29 INFO Email sent to user-1383
+2026-10-26 09:50:01 DEBUG SQL query took 21ms
+2026-10-26 09:50:27 INFO Payment 887437 authorized
+2026-10-26 09:51:05 DEBUG Cache miss for product 1087
+2026-10-26 09:51:26 WARNING Deprecated API version v1 called
+2026-10-26 09:51:51 INFO Scheduled job stock-sync completed in 73s
+2026-10-26 09:52:01 INFO GET /api/orders 200 in 26ms
+2026-10-26 09:52:35 INFO User user-1103 logged in
+2026-10-26 09:52:50 INFO POST /api/cart 201 in 333ms
+2026-10-26 09:53:08 INFO POST /api/orders 201 in 558ms
+2026-10-26 09:53:44 DEBUG Cache miss for product 1767
+2026-10-26 09:53:58 INFO Email sent to user-1247
+2026-10-26 09:54:07 INFO Email sent to user-1239
+2026-10-26 09:54:21 INFO POST /api/cart 201 in 351ms
+2026-10-26 09:54:39 WARNING Deprecated API version v1 called
+2026-10-26 09:54:47 INFO Email sent to user-1120
+2026-10-26 09:55:05 WARNING Slow query detected: 1543ms
+2026-10-26 09:55:31 DEBUG Session 80381341 refreshed
+2026-10-26 09:56:05 INFO User user-1340 logged out
+2026-10-26 09:56:12 DEBUG Connection pool: 14/50 in use
+2026-10-26 09:56:45 INFO User user-1253 logged in
+2026-10-26 09:57:20 INFO Scheduled job email-digest completed in 30s
+2026-10-26 09:57:43 INFO User user-1006 logged in
+2026-10-26 09:58:05 WARNING Disk usage at 85%
+2026-10-26 09:58:20 DEBUG Cache hit ratio: 0.97
+2026-10-26 09:58:41 INFO Email sent to user-1368
+2026-10-26 09:58:49 INFO POST /api/search 201 in 428ms
+2026-10-26 09:58:59 INFO Payment 706516 authorized
+2026-10-26 09:59:17 WARNING Deprecated API version v1 called
+2026-10-26 09:59:37 INFO POST /api/cart 201 in 555ms
+2026-10-26 09:59:57 INFO GET /api/users 200 in 59ms
+2026-10-26 10:00:05 INFO POST /api/orders 201 in 492ms
+2026-10-26 10:00:39 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 10:00:44 DEBUG Cache hit ratio: 0.93
+2026-10-26 10:01:08 INFO POST /api/products 201 in 114ms
+2026-10-26 10:01:46 INFO User user-1083 logged in
+2026-10-26 10:01:58 INFO GET /api/products 200 in 108ms
+2026-10-26 10:02:12 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 10:02:21 DEBUG Session 79165201 refreshed
+2026-10-26 10:02:30 INFO User user-1341 logged out
+2026-10-26 10:02:42 WARNING Deprecated API version v1 called
+2026-10-26 10:02:48 DEBUG Cache hit ratio: 0.93
+2026-10-26 10:03:26 INFO Order 997885 created for user-1143
+2026-10-26 10:03:55 WARNING Disk usage at 89%
+2026-10-26 10:04:26 INFO Scheduled job invoice-export completed in 20s
+2026-10-26 10:04:30 INFO Payment 196023 authorized
+2026-10-26 10:05:03 WARNING Disk usage at 83%
+2026-10-26 10:05:19 DEBUG Cache hit ratio: 0.63
+2026-10-26 10:05:27 INFO Payment 856186 authorized
+2026-10-26 10:05:39 INFO Order 999254 shipped
+2026-10-26 10:05:53 INFO GET /api/orders 200 in 261ms
+2026-10-26 10:06:31 INFO GET /api/products 200 in 298ms
+2026-10-26 10:06:42 INFO POST /api/search 201 in 96ms
+2026-10-26 10:07:07 DEBUG Connection pool: 15/50 in use
+2026-10-26 10:07:42 INFO Order 571380 shipped
+2026-10-26 10:07:49 DEBUG Session 74787663 refreshed
+2026-10-26 10:08:26 WARNING Response time above 2s for /api/users
+2026-10-26 10:08:44 INFO Email sent to user-1396
+2026-10-26 10:09:20 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 10:09:55 DEBUG Cache miss for product 3972
+2026-10-26 10:10:26 DEBUG SQL query took 116ms
+2026-10-26 10:10:54 INFO GET /api/users 200 in 357ms
+2026-10-26 10:11:28 INFO Payment 721828 authorized
+2026-10-26 10:12:00 INFO Payment 256248 authorized
+2026-10-26 10:12:18 WARNING Disk usage at 92%
+2026-10-26 10:12:44 DEBUG Connection pool: 7/50 in use
+2026-10-26 10:13:06 INFO Order 929471 created for user-1013
+2026-10-26 10:13:35 INFO GET /api/orders 200 in 111ms
+2026-10-26 10:14:04 INFO User user-1209 logged out
+2026-10-26 10:14:29 WARNING Slow query detected: 2353ms
+2026-10-26 10:14:51 INFO Order 301835 shipped
+2026-10-26 10:15:16 INFO POST /api/search 201 in 177ms
+2026-10-26 10:15:23 DEBUG Cache miss for product 4175
+2026-10-26 10:15:50 ERROR Order validation failed: missing shipping address
+2026-10-26 10:15:57 INFO Order 391997 created for user-1180
+2026-10-26 10:16:25 INFO Order 323544 created for user-1181
+2026-10-26 10:16:43 DEBUG SQL query took 93ms
+2026-10-26 10:17:00 INFO Email sent to user-1268
+2026-10-26 10:17:06 INFO Email sent to user-1276
+2026-10-26 10:17:44 WARNING Response time above 2s for /api/products
+2026-10-26 10:18:14 INFO Scheduled job invoice-export completed in 34s
+2026-10-26 10:18:18 INFO POST /api/search 201 in 315ms
+2026-10-26 10:18:44 WARNING Disk usage at 90%
+2026-10-26 10:18:58 INFO User user-1008 logged in
+2026-10-26 10:19:12 INFO Order 226225 created for user-1303
+2026-10-26 10:19:22 INFO GET /api/search 200 in 373ms
+2026-10-26 10:19:48 WARNING Disk usage at 82%
+2026-10-26 10:20:14 DEBUG Session 94541706 refreshed
+2026-10-26 10:20:51 INFO Order 662427 shipped
+2026-10-26 10:21:08 DEBUG Cache miss for product 3310
+2026-10-26 10:21:12 INFO POST /api/products 201 in 327ms
+2026-10-26 10:21:49 WARNING Response time above 2s for /api/products
+2026-10-26 10:22:20 INFO Email sent to user-1117
+2026-10-26 10:22:57 INFO Scheduled job email-digest completed in 51s
+2026-10-26 10:23:12 INFO Order 698227 shipped
+2026-10-26 10:23:18 INFO Payment 445570 authorized
+2026-10-26 10:23:39 INFO Order 876749 created for user-1260
+2026-10-26 10:23:48 INFO Email sent to user-1349
+2026-10-26 10:24:04 INFO POST /api/search 201 in 146ms
+2026-10-26 10:24:17 WARNING Slow query detected: 1794ms
+2026-10-26 10:24:30 DEBUG SQL query took 48ms
+2026-10-26 10:24:36 INFO User user-1376 logged out
+2026-10-26 10:24:41 INFO User user-1360 logged in
+2026-10-26 10:24:48 DEBUG Session 46637340 refreshed
+2026-10-26 10:25:21 INFO Order 385117 shipped
+2026-10-26 10:25:29 INFO User user-1171 logged out
+2026-10-26 10:25:41 DEBUG Cache miss for product 652
+2026-10-26 10:25:52 INFO Payment 472071 authorized
+2026-10-26 10:26:10 DEBUG Cache hit ratio: 0.96
+2026-10-26 10:26:31 WARNING Slow query detected: 3879ms
+2026-10-26 10:27:03 INFO POST /api/checkout 201 in 96ms
+2026-10-26 10:27:35 WARNING Deprecated API version v1 called
+2026-10-26 10:27:40 INFO Payment 875296 authorized
+2026-10-26 10:28:10 DEBUG Cache hit ratio: 0.85
+2026-10-26 10:28:15 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 10:28:20 DEBUG Cache miss for product 4449
+2026-10-26 10:28:37 INFO POST /api/checkout 201 in 344ms
+2026-10-26 10:28:42 INFO Order 110698 created for user-1376
+2026-10-26 10:29:07 DEBUG Cache miss for product 101
+2026-10-26 10:29:41 INFO POST /api/checkout 201 in 425ms
+2026-10-26 10:30:01 INFO POST /api/checkout 201 in 571ms
+2026-10-26 10:30:14 DEBUG Cache hit ratio: 0.68
+2026-10-26 10:30:39 INFO POST /api/checkout 201 in 311ms
+2026-10-26 10:30:43 INFO User user-1069 logged out
+2026-10-26 10:31:18 INFO User user-1177 logged in
+2026-10-26 10:31:51 WARNING Slow query detected: 1756ms
+2026-10-26 10:32:29 INFO User user-1327 logged in
+2026-10-26 10:33:02 DEBUG SQL query took 47ms
+2026-10-26 10:33:08 DEBUG SQL query took 66ms
+2026-10-26 10:33:39 DEBUG Cache miss for product 1195
+2026-10-26 10:34:08 INFO User user-1367 logged in
+2026-10-26 10:34:17 DEBUG Cache hit ratio: 0.90
+2026-10-26 10:34:21 DEBUG Cache miss for product 1905
+2026-10-26 10:34:35 DEBUG Cache miss for product 1168
+2026-10-26 10:34:46 WARNING Deprecated API version v1 called
+2026-10-26 10:34:51 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 10:35:21 INFO POST /api/users 201 in 219ms
+2026-10-26 10:35:54 DEBUG Cache hit ratio: 0.64
+2026-10-26 10:36:19 WARNING Response time above 2s for /api/products
+2026-10-26 10:36:56 INFO Order 697446 shipped
+2026-10-26 10:37:04 INFO User user-1327 logged out
+2026-10-26 10:37:29 WARNING Slow query detected: 3529ms
+2026-10-26 10:37:56 INFO User user-1362 logged in
+2026-10-26 10:38:03 WARNING Deprecated API version v1 called
+2026-10-26 10:38:26 DEBUG Cache miss for product 1922
+2026-10-26 10:38:37 WARNING Slow query detected: 2518ms
+2026-10-26 10:38:53 DEBUG Connection pool: 11/50 in use
+2026-10-26 10:39:26 INFO Order 835045 created for user-1153
+2026-10-26 10:39:50 INFO Order 577326 created for user-1398
+2026-10-26 10:40:16 DEBUG Connection pool: 14/50 in use
+2026-10-26 10:40:44 INFO GET /api/orders 200 in 120ms
+2026-10-26 10:40:51 INFO Order 229974 created for user-1265
+2026-10-26 10:41:03 INFO Payment 779751 authorized
+2026-10-26 10:41:38 INFO User user-1211 logged out
+2026-10-26 10:42:01 DEBUG Cache miss for product 3691
+2026-10-26 10:42:35 INFO User user-1088 logged in
+2026-10-26 10:42:41 INFO Order 240106 created for user-1202
+2026-10-26 10:42:57 INFO User user-1252 logged in
+2026-10-26 10:43:16 DEBUG Cache miss for product 2994
+2026-10-26 10:43:36 DEBUG Cache hit ratio: 0.65
+2026-10-26 10:43:40 INFO POST /api/orders 201 in 492ms
+2026-10-26 10:44:04 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 10:44:38 DEBUG Connection pool: 18/50 in use
+2026-10-26 10:45:05 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 10:45:19 DEBUG Session 88228051 refreshed
+2026-10-26 10:45:29 DEBUG Cache hit ratio: 0.60
+2026-10-26 10:45:44 ERROR Could not send email: SMTP connection refused
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+2026-10-26 10:45:50 INFO Order 706976 created for user-1083
+2026-10-26 10:46:10 INFO GET /api/cart 200 in 233ms
+2026-10-26 10:46:35 DEBUG SQL query took 15ms
+2026-10-26 10:46:53 INFO Order 998110 shipped
+2026-10-26 10:47:29 INFO GET /api/products 200 in 361ms
+2026-10-26 10:47:57 DEBUG Connection pool: 11/50 in use
+2026-10-26 10:48:25 WARNING Deprecated API version v1 called
+2026-10-26 10:49:00 INFO User user-1383 logged out
+2026-10-26 10:49:21 INFO Email sent to user-1171
+2026-10-26 10:49:56 DEBUG Cache miss for product 663
+2026-10-26 10:50:02 INFO Order 799118 created for user-1383
+2026-10-26 10:50:09 DEBUG SQL query took 66ms
+2026-10-26 10:50:38 DEBUG Cache miss for product 4515
+2026-10-26 10:50:58 INFO Email sent to user-1333
+2026-10-26 10:51:31 WARNING Disk usage at 80%
+2026-10-26 10:51:43 INFO Email sent to user-1230
+2026-10-26 10:00:00 WARN Abbreviated level
+2026-10-26 10:52:20 WARNING Disk usage at 85%
+2026-10-26 10:52:38 DEBUG Connection pool: 15/50 in use
+2026-10-26 10:53:16 INFO Email sent to user-1012
+2026-10-26 10:53:47 INFO User user-1292 logged in
+2026-10-26 10:53:56 INFO User user-1273 logged in
+2026-10-26 10:54:34 INFO Payment 838453 authorized
+2026-10-26 10:55:02 INFO User user-1076 logged out
+2026-10-26 10:55:18 DEBUG Cache hit ratio: 0.79
+2026-10-26 10:55:23 INFO GET /api/search 200 in 245ms
+2026-10-26 10:55:48 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 10:56:07 DEBUG SQL query took 51ms
+2026-10-26 10:56:33 INFO GET /api/search 200 in 161ms
+2026-10-26 10:57:07 DEBUG SQL query took 64ms
+2026-10-26 10:57:39 DEBUG Session 18518647 refreshed
+2026-10-26 10:58:03 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 10:58:26 INFO GET /api/checkout 200 in 161ms
+2026-10-26 10:58:51 INFO Order 164474 shipped
+2026-10-26 10:58:57 INFO Order 650528 shipped
+2026-10-26 10:59:07 INFO User user-1028 logged in
+2026-10-26 10:59:28 INFO Email sent to user-1150
+2026-10-26 10:59:44 DEBUG Connection pool: 10/50 in use
+2026-10-26 11:00:05 INFO GET /api/cart 200 in 240ms
+2026-10-26 11:00:19 INFO Order 643731 created for user-1125
+2026-10-26 11:00:34 DEBUG Cache miss for product 4956
+2026-10-26 11:00:49 INFO Order 203051 shipped
+2026-10-26 11:01:05 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 11:01:26 INFO Scheduled job email-digest completed in 48s
+2026-10-26 11:01:55 INFO POST /api/products 201 in 146ms
+2026-10-26 11:02:14 INFO Order 516156 created for user-1242
+2026-10-26 11:02:20 WARNING Disk usage at 91%
+2026-10-26 11:02:48 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 11:03:09 WARNING Slow query detected: 2811ms
+2026-10-26 11:03:26 DEBUG Session 80787431 refreshed
+2026-10-26 11:04:03 INFO User user-1361 logged out
+2026-10-26 11:04:21 DEBUG Session 28357132 refreshed
+2026-10-26 11:04:25 INFO Order 735045 shipped
+2026-10-26 11:05:01 DEBUG Cache hit ratio: 0.63
+2026-10-26 11:05:26 INFO Payment 240751 authorized
+2026-10-26 11:05:49 DEBUG Cache miss for product 649
+2026-10-26 11:06:19 DEBUG Cache hit ratio: 0.61
+2026-10-26 11:06:31 INFO Scheduled job stock-sync completed in 17s
+2026-10-26 11:06:36 DEBUG Cache miss for product 3742
+2026-10-26 11:06:54 INFO Scheduled job email-digest completed in 87s
+2026-10-26 11:07:20 DEBUG SQL query took 99ms
+2026-10-26 11:07:50 INFO Payment 593434 authorized
+2026-10-26 11:08:02 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 11:08:23 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 11:08:34 INFO Email sent to user-1185
+2026-10-26 11:08:43 DEBUG Cache hit ratio: 0.67
+2026-10-26 11:09:19 INFO Scheduled job stock-sync completed in 36s
+2026-10-26 11:09:56 INFO GET /api/products 200 in 53ms
+2026-10-26 11:10:21 INFO Email sent to user-1196
+2026-10-26 11:10:55 INFO Payment 377744 authorized
+2026-10-26 11:11:05 WARNING Disk usage at 85%
+2026-10-26 11:11:36 INFO POST /api/cart 201 in 291ms
+2026-10-26 11:12:09 INFO GET /api/cart 200 in 62ms
+2026-10-26 11:12:28 INFO Order 197479 created for user-1288
+2026-10-26 11:12:41 DEBUG Session 13278682 refreshed
+2026-10-26 11:12:51 DEBUG Cache miss for product 3397
+2026-10-26 11:13:19 INFO GET /api/users 200 in 62ms
+2026-10-26 11:13:44 INFO GET /api/products 200 in 130ms
+
+Exception in thread "scheduler-1" java.lang.IllegalStateException: queue closed
+2026-10-26 11:14:06 INFO Order 639045 created for user-1092
+2026-10-26 11:14:38 INFO GET /api/search 200 in 70ms
+2026-10-26 11:14:43 INFO Email sent to user-1157
+2026-10-26 11:15:09 DEBUG Connection pool: 8/50 in use
+2026-10-26 11:15:19 INFO Payment 476982 authorized
+2026-10-26 11:15:28 INFO GET /api/search 200 in 333ms
+2026-10-26 11:16:05 INFO Scheduled job email-digest completed in 90s
+2026-10-26 11:16:36 INFO Order 750860 shipped
+2026-10-26 11:17:00 INFO Order 805409 created for user-1359
+2026-10-26 11:17:13 DEBUG Cache miss for product 4471
+2026-10-26 11:17:47 INFO User user-1222 logged in
+2026-10-26 11:18:15 INFO Scheduled job email-digest completed in 42s
+2026-10-26 11:18:50 INFO Scheduled job invoice-export completed in 20s
+2026-10-26 11:19:05 INFO Scheduled job stock-sync completed in 79s
+2026-10-26 11:19:12 DEBUG Cache hit ratio: 0.90
+2026-10-26 11:19:28 WARNING Slow query detected: 3514ms
+2026-10-26 11:19:38 DEBUG Connection pool: 15/50 in use
+2026-10-26 11:20:06 INFO User user-1115 logged out
+2026-10-26 11:20:44 DEBUG Connection pool: 16/50 in use
+2026-10-26 11:21:21 INFO Scheduled job report-builder completed in 28s
+2026-10-26 11:21:35 DEBUG Session 83315327 refreshed
+2026-10-26 11:22:02 DEBUG Cache miss for product 3976
+2026-10-26 11:22:33 DEBUG Connection pool: 14/50 in use
+2026-10-26 11:22:58 INFO POST /api/cart 201 in 398ms
+2026-10-26 11:23:18 INFO POST /api/orders 201 in 516ms
+2026-10-26 11:23:29 INFO User user-1250 logged in
+2026-10-26 11:23:34 INFO Email sent to user-1189
+2026-10-26 11:23:58 WARNING Deprecated API version v1 called
+2026-10-26 11:24:20 DEBUG Cache hit ratio: 0.60
+2026-10-26 11:24:46 INFO Payment 963983 authorized
+2026-10-26 11:25:17 INFO Order 754561 shipped
+2026-10-26 11:25:52 INFO GET /api/checkout 200 in 218ms
+2026-10-26 11:26:27 INFO User user-1258 logged in
+2026-10-26 11:26:39 WARNING Response time above 2s for /api/cart
+2026-10-26 11:26:45 INFO Order 386550 created for user-1089
+2026-10-26 11:27:00 INFO Order 110986 shipped
+2026-10-26 11:27:34 INFO User user-1347 logged in
+2026-10-26 11:28:10 INFO User user-1021 logged out
+2026-10-26 11:28:19 WARNING Response time above 2s for /api/users
+2026-10-26 11:28:52 INFO POST /api/search 201 in 598ms
+2026-10-26 11:29:16 ERROR Payment retry failed
+    at com.example.orders.OrderService.place(OrderService.java:211)
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+    at com.example.payment.PaymentController.checkout(PaymentController.java:88)
+    at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.ConnectException: Connection refused
+2026-10-26 11:29:54 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 11:30:32 INFO User user-1312 logged out
+2026-10-26 11:30:37 WARNING Deprecated API version v1 called
+2026-10-26 11:30:50 DEBUG Session 62629123 refreshed
+2026-10-26 11:31:13 DEBUG SQL query took 28ms
+2026-10-26 11:31:24 INFO Order 664334 shipped
+2026-10-26 11:31:57 INFO POST /api/products 201 in 527ms
+2026-10-26 11:32:18 ERROR Order validation failed: missing shipping address
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+    at com.example.orders.OrderService.place(OrderService.java:211)
+    at java.base/java.lang.Thread.run(Thread.java:1583)
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+2026-10-26 11:32:48 INFO Email sent to user-1089
+2026-10-26 11:32:58 INFO User user-1268 logged in
+2026-10-26 11:33:35 DEBUG Cache hit ratio: 0.73
+2026-10-26 11:34:06 WARNING Deprecated API version v1 called
+2026-10-26 11:34:23 INFO Email sent to user-1074
+2026-10-26 11:34:27 DEBUG Connection pool: 3/50 in use
+2026-10-26 11:34:52 INFO User user-1022 logged out
+2026-10-26 11:35:17 INFO Scheduled job email-digest completed in 21s
+2026-10-26 11:35:44 WARNING Response time above 2s for /api/users
+2026-10-26 11:35:48 DEBUG Connection pool: 10/50 in use
+2026-10-26 11:35:59 DEBUG Cache hit ratio: 0.71
+2026-10-26 11:36:28 WARNING Disk usage at 88%
+2026-10-26 11:36:32 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 11:37:08 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 11:37:44 INFO GET /api/products 200 in 190ms
+2026-10-26 11:37:50 WARNING Disk usage at 80%
+2026-10-26 11:38:03 INFO POST /api/cart 201 in 490ms
+2026-10-26 11:38:29 INFO GET /api/users 200 in 157ms
+2026-10-26 11:39:03 INFO Payment 946348 authorized
+2026-10-26 11:39:17 INFO Scheduled job email-digest completed in 41s
+2026-10-26 11:39:25 DEBUG Connection pool: 10/50 in use
+2026-10-26 11:40:00 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 11:40:15 INFO User user-1209 logged out
+2026-10-26 11:40:21 DEBUG Session 74694089 refreshed
+2026-10-26 11:40:33 DEBUG Cache miss for product 3656
+2026-10-26 11:41:10 WARNING Slow query detected: 2176ms
+2026-10-26 11:41:30 DEBUG Connection pool: 16/50 in use
+2026-10-26 11:41:51 INFO GET /api/products 200 in 300ms
+2026-10-26 11:42:26 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 11:43:00 INFO Email sent to user-1105
+2026-10-26 11:43:32 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 11:43:42 INFO Payment 968426 authorized
+2026-10-26 11:44:00 INFO GET /api/orders 200 in 264ms
+2026-10-26 11:44:11 INFO Order 199195 created for user-1041
+2026-10-26 11:44:16 INFO Payment 617071 authorized
+2026-10-26 11:44:31 INFO Order 854334 created for user-1222
+2026-10-26 11:44:55 INFO Order 107523 created for user-1289
+2026-10-26 11:45:20 INFO User user-1303 logged out
+2026-10-26 11:45:49 INFO GET /api/cart 200 in 281ms
+2026-10-26 11:46:18 INFO Scheduled job email-digest completed in 78s
+2026-10-26 11:46:32 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 11:46:46 DEBUG Connection pool: 2/50 in use
+2026-10-26 11:47:01 INFO User user-1260 logged in
+2026-10-26 11:47:11 INFO Order 647959 created for user-1132
+2026-10-26 11:47:33 INFO User user-1093 logged out
+2026-10-26 11:48:03 INFO POST /api/users 201 in 210ms
+2026-10-26 11:48:30 ERROR Inventory service returned 503
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+    at com.example.orders.OrderService.place(OrderService.java:211)
+    at com.example.payment.PaymentController.checkout(PaymentController.java:88)
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+2026-10-26 11:48:57 INFO GET /api/search 200 in 336ms
+2026-10-26 11:49:21 DEBUG Connection pool: 15/50 in use
+2026-10-26 11:49:49 INFO Payment 442574 authorized
+2026-10-26 11:50:13 INFO Payment 840794 authorized
+2026-10-26 11:50:35 DEBUG Connection pool: 5/50 in use
+2026-10-26 11:51:05 INFO POST /api/orders 201 in 316ms
+2026-10-26 11:51:24 WARNING Slow query detected: 2402ms
+2026-10-26 11:51:58 DEBUG Connection pool: 3/50 in use
+2026-10-26 11:52:27 INFO GET /api/users 200 in 324ms
+2026-10-26 11:52:55 DEBUG Cache hit ratio: 0.70
+2026-10-26 11:53:22 WARNING Slow query detected: 3496ms
+2026-10-26 11:53:31 INFO POST /api/orders 201 in 145ms
+2026-10-26 11:53:45 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 11:54:17 INFO Payment 816532 authorized
+2026-10-26 11:54:54 INFO Email sent to user-1263
+2026-10-26 11:55:13 INFO User user-1221 logged out
+2026-10-26 11:55:36 INFO Order 997711 created for user-1116
+2026-10-26 11:56:09 DEBUG Cache hit ratio: 0.85
+2026-10-26 11:56:19 INFO GET /api/orders 200 in 24ms
+2026-10-26 11:56:41 INFO Scheduled job stock-sync completed in 17s
+2026-10-26 11:56:48 INFO GET /api/search 200 in 230ms
+2026-10-26 11:57:11 DEBUG Session 95128336 refreshed
+2026-10-26 11:57:37 DEBUG Connection pool: 17/50 in use
+2026-10-26 11:57:54 INFO POST /api/users 201 in 543ms
+2026-10-26 11:58:24 DEBUG Cache hit ratio: 0.89
+2026-10-26 11:58:55 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 11:59:09 INFO Payment 513437 authorized
+2026-10-26 11:59:18 INFO Email sent to user-1299
+2026-10-26 11:59:27 WARNING Response time above 2s for /api/cart
+2026-10-26 11:59:52 WARNING Deprecated API version v1 called
+2026-10-26 12:00:12 INFO Payment 944956 authorized
+2026-10-26 12:00:22 DEBUG SQL query took 97ms
+2026-10-26 12:00:48 INFO Order 822203 created for user-1335
+2026-10-26 12:01:02 INFO User user-1321 logged in
+2026-10-26 12:01:22 WARNING Response time above 2s for /api/orders
+2026-10-26 12:01:44 WARNING Disk usage at 89%
+2026-10-26 12:02:11 WARNING Response time above 2s for /api/products
+2026-10-26 12:02:34 INFO GET /api/orders 200 in 163ms
+2026-10-26 12:02:51 INFO Email sent to user-1304
+2026-10-26 12:03:12 DEBUG Session 52734122 refreshed
+2026-10-26 12:03:48 INFO User user-1391 logged in
+2026-10-26 12:04:14 INFO User user-1267 logged in
+2026-10-26 12:04:38 DEBUG Session 10081802 refreshed
+2026-10-26 12:05:13 INFO Email sent to user-1260
+2026-10-26 12:05:42 INFO GET /api/users 200 in 197ms
+2026-10-26 12:06:06 DEBUG Cache miss for product 2703
+2026-10-26 12:06:29 INFO GET /api/checkout 200 in 316ms
+2026-10-26 12:06:35 DEBUG Cache miss for product 3372
+2026-10-26 12:07:06 INFO User user-1011 logged in
+2026-10-26 12:07:18 DEBUG Connection pool: 4/50 in use
+2026-10-26 12:07:39 DEBUG SQL query took 113ms
+2026-10-26 12:07:54 INFO User user-1240 logged out
+2026-10-26 12:08:18 INFO Payment 233914 authorized
+2026-10-26 12:08:45 INFO Email sent to user-1094
+2026-10-26 12:09:23 DEBUG SQL query took 86ms
+2026-10-26 12:10:01 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 12:10:39 INFO Email sent to user-1192
+2026-10-26 12:11:17 DEBUG SQL query took 68ms
+2026-10-26 12:11:32 DEBUG Cache miss for product 1573
+2026-10-26 12:11:37 INFO User user-1391 logged in
+2026-10-26 12:12:02 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 12:12:29 INFO Order 395229 created for user-1178
+2026-10-26 12:12:47 INFO Order 751359 created for user-1027
+2026-10-26 12:12:51 INFO Email sent to user-1299
+2026-10-26 12:12:59 INFO GET /api/search 200 in 179ms
+2026-10-26 12:13:34 DEBUG Cache hit ratio: 0.68
+2026-10-26 12:13:50 INFO POST /api/users 201 in 408ms
+2026-10-26 12:14:08 DEBUG Connection pool: 18/50 in use
+2026-10-26 12:14:45 INFO Email sent to user-1209
+2026-10-26 12:14:52 INFO Order 944932 shipped
+2026-10-26 12:15:29 DEBUG Cache miss for product 4905
+2026-10-26 12:16:01 INFO Order 787568 shipped
+2026-10-26 12:16:10 INFO Payment 103782 authorized
+2026-10-26 12:16:43 INFO Scheduled job stock-sync completed in 17s
+2026-10-26 12:17:04 DEBUG Cache miss for product 4640
+2026-10-26 12:17:23 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 12:17:51 ERROR Payment retry failed
+2026-10-26 12:17:59 INFO Order 150606 shipped
+2026-10-26 12:18:16 DEBUG Session 73382524 refreshed
+2026-10-26 12:18:27 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 12:18:55 DEBUG Session 19111558 refreshed
+2026-10-26 12:19:14 DEBUG Connection pool: 14/50 in use
+2026-10-26 12:19:20 DEBUG SQL query took 90ms
+2026-10-26 12:19:33 DEBUG Cache miss for product 3171
+2026-10-26 12:19:43 INFO Order 972446 shipped
+2026-10-26 12:20:09 DEBUG Cache miss for product 4414
+2026-10-26 12:20:43 DEBUG Cache hit ratio: 0.78
+2026-10-26 12:21:06 DEBUG Session 29564751 refreshed
+2026-10-26 12:21:29 INFO GET /api/orders 200 in 350ms
+2026-10-26 12:21:54 INFO User user-1367 logged in
+2026-10-26 12:22:17 DEBUG SQL query took 9ms
+2026-10-26 12:22:49 DEBUG Connection pool: 6/50 in use
+2026-10-26 12:23:00 INFO Order 736054 shipped
+2026-10-26 12:23:10 INFO GET /api/checkout 200 in 270ms
+2026-10-26 12:23:33 INFO GET /api/cart 200 in 371ms
+2026-10-26 12:24:10 INFO POST /api/orders 201 in 554ms
+2026-10-26 12:24:28 INFO User user-1340 logged in
+2026-10-26 12:24:44 INFO Email sent to user-1319
+2026-10-26 12:24:58 DEBUG Cache hit ratio: 0.72
+2026-10-26 12:25:18 INFO User user-1257 logged out
+2026-10-26 12:25:51 DEBUG Cache hit ratio: 0.78
+2026-10-26 12:26:09 INFO Payment 378461 authorized
+2026-10-26 12:26:15 INFO POST /api/products 201 in 526ms
+2026-10-26 12:26:26 INFO User user-1132 logged in
+2026-10-26 12:26:56 WARNING Response time above 2s for /api/cart
+2026-10-26 12:27:17 DEBUG Cache hit ratio: 0.61
+2026-10-26 12:27:54 INFO GET /api/products 200 in 214ms
+2026-10-26 12:27:58 DEBUG Connection pool: 2/50 in use
+2026-10-26 12:28:04 INFO POST /api/orders 201 in 467ms
+2026-10-26 12:28:30 INFO POST /api/orders 201 in 585ms
+2026-10-26 12:28:54 INFO User user-1109 logged out
+2026-10-26 12:29:27 INFO Email sent to user-1206
+2026-10-26 12:29:48 DEBUG SQL query took 35ms
+2026-10-26 12:29:59 INFO User user-1034 logged in
+2026-10-26 12:30:00 INFO Deploying version 2.14.0
+2026-10-26 12:32:27 ERROR Order validation failed: missing shipping address
+2026-10-26 12:33:09 ERROR Order validation failed: missing shipping address
+    at java.base/java.lang.Thread.run(Thread.java:1583)
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+2026-10-26 12:33:44 ERROR Order validation failed: missing shipping address
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+    at java.base/java.lang.Thread.run(Thread.java:1583)
+    at com.example.orders.OrderService.place(OrderService.java:211)
+Caused by: java.net.SocketTimeoutException: Read timed out
+2026-10-26 12:34:26 ERROR Order validation failed: missing shipping address
+2026-10-26 12:35:26 INFO Rolled back to version 2.13.2
+2026-10-26 12:37:02 WARNING Response time above 2s for /api/checkout
+2026-10-26 12:37:36 DEBUG Cache hit ratio: 0.85
+2026-10-26 12:37:55 INFO Order 932460 created for user-1133
+2026-10-26 12:38:24 WARNING Disk usage at 86%
+2026-10-26 12:38:36 INFO Email sent to user-1318
+2026-10-26 12:38:43 INFO POST /api/orders 201 in 565ms
+2026-10-26 12:38:51 INFO Order 240684 created for user-1099
+2026-10-26 12:39:12 INFO POST /api/cart 201 in 233ms
+2026-10-26 12:39:37 INFO Order 431165 shipped
+2026-10-26 12:39:46 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 12:40:23 INFO Email sent to user-1005
+2026-10-26 12:40:39 DEBUG Connection pool: 4/50 in use
+2026-10-26 12:40:53 INFO Email sent to user-1004
+2026-10-26 12:41:17 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 12:41:28 INFO Email sent to user-1233
+2026-10-26 12:41:54 INFO POST /api/checkout 201 in 495ms
+2026-10-26 12:42:02 WARNING Deprecated API version v1 called
+2026-10-26 12:42:11 INFO User user-1383 logged in
+2026-10-26 12:42:34 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 12:42:42 WARNING Deprecated API version v1 called
+2026-10-26 12:43:14 INFO Order 860426 created for user-1106
+2026-10-26 12:43:52 INFO Order 994174 shipped
+2026-10-26 12:44:12 INFO User user-1060 logged in
+2026-10-26 12:44:45 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 12:45:23 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 12:45:57 INFO POST /api/products 201 in 407ms
+2026-10-26 12:46:25 DEBUG Cache miss for product 3328
+2026-10-26 12:46:36 DEBUG SQL query took 27ms
+2026-10-26 12:47:13 INFO GET /api/checkout 200 in 145ms
+2026-10-26 12:47:19 INFO Payment 268718 authorized
+2026-10-26 12:47:40 WARNING Response time above 2s for /api/products
+2026-10-26 12:48:07 INFO Scheduled job stock-sync completed in 87s
+2026-10-26 12:48:44 INFO Order 392498 created for user-1009
+2026-10-26 12:49:04 INFO POST /api/checkout 201 in 232ms
+2026-10-26 12:49:35 INFO Order 956452 created for user-1301
+2026-10-26 12:50:11 INFO Payment 400687 authorized
+2026-02-30 09:00:00 INFO Impossible date
+2026-10-26 12:50:28 WARNING Deprecated API version v1 called
+2026-10-26 12:51:02 WARNING Slow query detected: 2643ms
+2026-10-26 12:51:16 DEBUG Session 77004345 refreshed
+2026-10-26 12:51:40 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 12:52:15 DEBUG SQL query took 78ms
+2026-10-26 12:52:44 DEBUG Cache hit ratio: 0.71
+2026-10-26 12:52:49 INFO Order 790612 shipped
+2026-10-26 12:53:15 DEBUG SQL query took 49ms
+2026-10-26 12:53:53 DEBUG Session 40277353 refreshed
+2026-10-26 12:54:28 INFO Email sent to user-1141
+2026-10-26 12:54:35 ERROR Payment retry failed
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+    at com.example.orders.OrderService.place(OrderService.java:211)
+    at java.base/java.lang.Thread.run(Thread.java:1583)
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+Caused by: java.net.SocketTimeoutException: Read timed out
+2026-10-26 12:54:41 DEBUG Session 34930281 refreshed
+2026-10-26 12:54:45 DEBUG Cache miss for product 2091
+2026-10-26 12:55:10 INFO Scheduled job email-digest completed in 42s
+2026-10-26 12:55:48 WARNING Response time above 2s for /api/cart
+2026-10-26 12:56:04 INFO User user-1356 logged in
+2026-10-26 12:56:37 INFO Order 142379 created for user-1193
+2026-10-26 12:57:05 INFO Order 740193 created for user-1136
+2026-10-26 12:57:31 DEBUG Cache hit ratio: 0.69
+2026-10-26 12:57:38 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 12:58:09 INFO Scheduled job email-digest completed in 42s
+2026-10-26 12:58:28 INFO Scheduled job invoice-export completed in 27s
+2026-10-26 12:59:04 DEBUG Cache hit ratio: 0.81
+2026-10-26 12:59:14 INFO POST /api/checkout 201 in 228ms
+2026-10-26 12:59:42 INFO GET /api/cart 200 in 258ms
+2026-10-26 13:00:05 INFO POST /api/search 201 in 184ms
+2026-10-26 13:00:28 WARNING Disk usage at 87%
+2026-10-26 13:00:46 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 13:00:53 DEBUG Cache hit ratio: 0.62
+2026-10-26 13:01:29 INFO User user-1172 logged out
+2026-10-26 13:01:34 DEBUG SQL query took 79ms
+2026-10-26 13:01:43 ERROR Payment retry failed
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+    at com.example.payment.PaymentController.checkout(PaymentController.java:88)
+    at java.base/java.lang.Thread.run(Thread.java:1583)
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+Caused by: java.net.ConnectException: Connection refused
+2026-10-26 13:01:51 INFO User user-1057 logged out
+2026-10-26 13:01:56 INFO Order 230759 created for user-1090
+2026-10-26 13:02:18 WARNING Response time above 2s for /api/checkout
+2026-10-26 13:02:42 ERROR Failed to process payment: timeout
+    at com.example.orders.OrderService.place(OrderService.java:211)
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+    at com.example.payment.PaymentController.checkout(PaymentController.java:88)
+2026-10-26 13:03:06 INFO POST /api/checkout 201 in 238ms
+2026-10-26 13:03:10 INFO Order 852077 created for user-1101
+2026-10-26 13:03:26 DEBUG Cache hit ratio: 0.81
+2026-10-26 13:03:56 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 13:04:09 INFO Order 980417 created for user-1319
+2026-10-26 13:04:36 WARNING Response time above 2s for /api/users
+2026-10-26 13:04:54 DEBUG SQL query took 65ms
+2026-10-26 13:05:01 INFO Email sent to user-1192
+2026-10-26 13:05:25 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 13:05:39 INFO GET /api/checkout 200 in 303ms
+2026-10-26 13:06:11 INFO POST /api/orders 201 in 136ms
+2026-10-26 13:06:26 DEBUG Connection pool: 7/50 in use
+2026-10-26 13:06:53 INFO Order 669178 shipped
+2026-10-26 13:07:23 INFO Scheduled job invoice-export completed in 9s
+2026-10-26 13:07:32 INFO User user-1188 logged out
+2026-10-26 13:07:54 INFO GET /api/cart 200 in 221ms
+2026-10-26 13:08:03 INFO Email sent to user-1017
+2026-10-26 13:08:39 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 13:08:43 WARNING Response time above 2s for /api/search
+2026-10-26 13:08:50 INFO Order 526248 shipped
+2026-10-26 13:09:25 INFO Scheduled job email-digest completed in 51s
+2026-10-26 13:09:47 DEBUG Cache miss for product 4792
+2026-10-26 13:09:53 INFO User user-1374 logged in
+2026-10-26 13:10:07 INFO Email sent to user-1297
+2026-10-26 13:10:45 INFO Order 464920 shipped
+2026-10-26 13:11:21 INFO Order 941331 shipped
+2026-10-26 13:11:29 INFO POST /api/orders 201 in 44ms
+2026-10-26 13:11:49 INFO User user-1391 logged out
+2026-10-26 13:12:23 DEBUG Connection pool: 18/50 in use
+2026-10-26 13:12:39 WARNING Disk usage at 88%
+2026-10-26 13:13:15 ERROR Inventory service returned 503
+2026-10-26 13:13:44 INFO GET /api/users 200 in 261ms
+2026-10-26 13:14:07 WARNING Disk usage at 88%
+2026-10-26 13:14:20 INFO Email sent to user-1213
+2026-10-26 13:14:47 WARNING Disk usage at 83%
+2026-10-26 13:15:00 INFO POST /api/users 201 in 215ms
+2026-10-26 13:15:29 INFO Scheduled job stock-sync completed in 50s
+2026-10-26 13:15:46 ERROR Cache eviction failed
+    at com.example.payment.PaymentController.checkout(PaymentController.java:88)
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+Caused by: java.net.SocketTimeoutException: Read timed out
+2026-10-26 13:15:57 DEBUG Cache miss for product 4100
+2026-10-26 13:16:16 WARNING Slow query detected: 2093ms
+2026-10-26 13:16:33 DEBUG Connection pool: 5/50 in use
+2026-10-26 13:16:43 DEBUG Session 28704070 refreshed
+2026-10-26 13:16:54 INFO POST /api/search 201 in 45ms
+2026-10-26 13:17:14 DEBUG Cache hit ratio: 0.61
+2026-10-26 13:17:18 INFO Scheduled job email-digest completed in 63s
+2026-10-26 13:17:33 INFO GET /api/checkout 200 in 89ms
+2026-10-26 13:17:42 DEBUG Cache miss for product 1762
+2026-10-26 13:18:04 INFO Email sent to user-1373
+2026-10-26 13:18:30 ERROR Order validation failed: missing shipping address
+
+    at java.base/java.lang.Thread.run(Thread.java:1583)
+    at com.example.orders.OrderService.place(OrderService.java:211)
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+2026-10-26 13:18:53 INFO Scheduled job stock-sync completed in 61s
+2026-10-26 13:19:07 INFO Email sent to user-1173
+2026-10-26 13:19:24 WARNING Response time above 2s for /api/orders
+2026-10-26 13:19:54 INFO Scheduled job invoice-export completed in 82s
+2026-10-26 13:20:13 DEBUG Connection pool: 17/50 in use
+2026-10-26 13:20:32 INFO Order 946844 shipped
+2026-10-26 13:20:40 INFO Order 328747 created for user-1292
+2026-10-26 13:20:44 INFO POST /api/cart 201 in 364ms
+2026-10-26 13:20:57 DEBUG SQL query took 99ms
+2026-10-26 13:21:28 DEBUG Session 49951396 refreshed
+2026-10-26 13:21:46 INFO Order 383815 created for user-1098
+2026-10-26 13:22:11 INFO Order 570211 shipped
+2026-10-26 13:22:32 INFO User user-1342 logged in
+2026-10-26 13:23:10 INFO Payment 986100 authorized
+2026-10-26 13:23:14 INFO POST /api/users 201 in 443ms
+2026-10-26 13:23:33 INFO Email sent to user-1116
+2026-10-26 13:23:39 INFO Email sent to user-1057
+2026-10-26 13:23:43 DEBUG Cache hit ratio: 0.86
+2026-10-26 13:23:59 INFO Email sent to user-1019
+2026-10-26 13:24:04 INFO User user-1124 logged out
+2026-10-26 13:24:13 INFO User user-1296 logged in
+2026-10-26 13:24:51 WARNING Deprecated API version v1 called
+2026-10-26 13:25:01 INFO GET /api/checkout 200 in 144ms
+2026-10-26 13:25:16 WARNING Slow query detected: 1648ms
+2026-10-26 13:25:23 ERROR Order validation failed: missing shipping address
+2026-10-26 13:25:29 INFO Order 902425 shipped
+2026-10-26 13:25:35 INFO User user-1306 logged in
+2026-10-26 13:26:01 INFO Order 761692 shipped
+2026-10-26 13:26:21 DEBUG Cache hit ratio: 0.95
+2026-10-26 13:26:43 DEBUG Connection pool: 4/50 in use
+2026-10-26 13:27:18 INFO GET /api/products 200 in 236ms
+2026-10-26 13:27:22 INFO GET /api/products 200 in 25ms
+2026-10-26 13:27:30 WARNING Disk usage at 88%
+2026-10-26 13:27:45 INFO GET /api/search 200 in 105ms
+2026-10-26 13:28:06 DEBUG Session 28066564 refreshed
+2026-10-26 13:28:42 INFO GET /api/checkout 200 in 41ms
+2026-10-26 13:28:47 INFO Order 435950 shipped
+2026-10-26 13:29:06 DEBUG Cache hit ratio: 0.69
+2026-10-26 13:29:26 WARNING Response time above 2s for /api/orders
+2026-10-26 13:29:31 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 13:30:07 INFO Payment 221763 authorized
+2026-10-26 13:30:42 INFO Email sent to user-1354
+2026-10-26 13:31:13 DEBUG Connection pool: 10/50 in use
+2026-10-26 13:31:19 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 13:31:51 INFO Email sent to user-1317
+2026-10-26 13:31:56 INFO GET /api/cart 200 in 41ms
+2026-10-26 13:32:02 INFO Order 274978 created for user-1359
+2026-10-26 13:32:36 DEBUG Connection pool: 8/50 in use
+2026-10-26 13:33:01 DEBUG Cache miss for product 4553
+2026-10-26 13:33:26 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 13:33:35 DEBUG SQL query took 112ms
+2026-10-26 13:34:00 DEBUG Cache miss for product 2487
+2026-10-26 13:34:38 DEBUG Cache miss for product 1683
+2026-10-26 13:34:51 INFO User user-1191 logged out
+2026-10-26 13:35:13 INFO Order 348961 created for user-1021
+2026-10-26 13:35:50 DEBUG Cache hit ratio: 0.98
+2026-10-26 13:36:28 WARNING Response time above 2s for /api/products
+2026-10-26 13:36:55 INFO Email sent to user-1248
+2026-10-26 10:00:00 info Lowercase level
+2026-10-26 13:37:25 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 13:37:55 WARNING Disk usage at 90%
+2026-10-26 13:38:10 INFO User user-1275 logged in
+2026-10-26 13:38:24 INFO Email sent to user-1102
+2026-10-26 13:38:32 INFO User user-1141 logged out
+2026-10-26 13:38:46 INFO User user-1184 logged in
+2026-10-26 13:38:56 DEBUG Connection pool: 4/50 in use
+2026-10-26 13:39:24 INFO User user-1216 logged in
+2026-10-26 13:39:43 WARNING Disk usage at 91%
+2026-10-26 13:40:09 DEBUG Session 41433324 refreshed
+2026-10-26 13:40:24 INFO User user-1080 logged out
+2026-10-26 14:3
+2026-10-26 13:40:32 INFO Order 507544 shipped
+2026-10-26 13:41:02 WARNING Deprecated API version v1 called
+2026-10-26 13:41:27 WARNING Disk usage at 84%
+2026-10-26 13:41:35 INFO Payment 706613 authorized
+2026-10-26 13:42:13 WARNING Slow query detected: 3912ms
+2026-10-26 13:42:22 INFO Email sent to user-1142
+2026-10-26 13:43:00 INFO User user-1113 logged out
+2026-10-26 13:43:27 INFO User user-1302 logged in
+2026-10-26 13:43:33 INFO GET /api/search 200 in 211ms
+2026-10-26 13:43:59 WARNING Disk usage at 89%
+2026-10-26 13:44:26 INFO Order 353083 created for user-1217
+2026-10-26 13:44:58 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 13:45:11 WARNING Disk usage at 92%
+2026-10-26 13:45:25 INFO POST /api/orders 201 in 374ms
+2026-10-26 13:45:56 INFO Order 907084 shipped
+2026-10-26 13:46:30 INFO Payment 404705 authorized
+2026-10-26 13:46:51 INFO User user-1000 logged in
+2026-10-26 13:47:09 INFO Order 538199 created for user-1147
+2026-10-26 13:47:39 INFO User user-1357 logged out
+2026-10-26 13:48:10 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 13:48:38 INFO POST /api/orders 201 in 558ms
+2026-10-26 13:48:52 INFO Payment 338417 authorized
+2026-10-26 13:49:11 INFO User user-1243 logged in
+2026-10-26 13:49:39 DEBUG SQL query took 1ms
+2026-10-26 13:49:59 INFO User user-1343 logged out
+2026-10-26 13:50:17 INFO User user-1391 logged in
+2026-10-26 13:50:54 INFO User user-1285 logged in
+2026-10-26 13:51:24 DEBUG Cache miss for product 1819
+2026-10-26 13:51:52 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 13:51:58 DEBUG Cache hit ratio: 0.78
+2026-10-26 13:52:03 INFO User user-1038 logged in
+2026-10-26 13:52:18 INFO Order 826372 created for user-1048
+2026-10-26 13:52:38 INFO Scheduled job email-digest completed in 26s
+2026-10-26 13:53:08 DEBUG Session 95074171 refreshed
+2026-10-26 13:53:16 ERROR Cache eviction failed
+2026-10-26 13:53:54 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 13:54:01 INFO Payment 101464 authorized
+2026-10-26 13:54:31 INFO GET /api/users 200 in 143ms
+2026-10-26 13:54:35 INFO User user-1131 logged in
+2026-10-26 13:54:58 INFO POST /api/orders 201 in 32ms
+2026-10-26 13:55:04 INFO User user-1101 logged in
+2026-10-26 13:55:29 DEBUG Session 84396476 refreshed
+2026-10-26 13:55:33 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 13:55:46 DEBUG SQL query took 10ms
+2026-10-26 13:56:09 INFO Payment 782384 authorized
+2026-10-26 13:56:33 INFO Payment 105482 authorized
+2026-10-26 13:57:09 ERROR Payment retry failed
+    at com.example.payment.PaymentController.checkout(PaymentController.java:88)
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+Caused by: java.net.SocketTimeoutException: Read timed out
+2026-10-26 13:57:29 WARNING Deprecated API version v1 called
+2026-10-26 13:57:36 INFO Order 723921 shipped
+2026-10-26 13:57:54 INFO Order 231935 created for user-1069
+2026-10-26 13:58:09 INFO POST /api/cart 201 in 52ms
+2026-10-26 13:58:26 INFO Order 372739 shipped
+2026-10-26 13:58:48 DEBUG Cache hit ratio: 0.76
+2026-10-26 13:59:10 INFO User user-1140 logged in
+2026-10-26 13:59:23 INFO Scheduled job report-builder completed in 57s
+2026-10-26 13:59:45 INFO User user-1264 logged out
+2026-10-26 14:00:05 WARNING Response time above 2s for /api/orders
+2026-10-26 14:00:41 INFO Payment 909707 authorized
+2026-10-26 14:01:06 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 14:01:36 INFO Payment 778720 authorized
+2026-10-26 14:02:00 INFO GET /api/orders 200 in 35ms
+2026-10-26 14:02:33 INFO Order 185365 shipped
+2026-10-26 14:03:11 INFO GET /api/cart 200 in 305ms
+2026-10-26 14:03:41 INFO Email sent to user-1215
+2026-10-26 14:04:02 INFO User user-1024 logged out
+2026-10-26 14:04:12 WARNING Disk usage at 82%
+2026-10-26 14:04:35 INFO Order 469750 created for user-1124
+2026-10-26 14:04:43 INFO Email sent to user-1003
+2026-10-26 14:05:07 INFO Scheduled job email-digest completed in 47s
+2026-10-26 14:05:45 WARNING Response time above 2s for /api/users
+2026-10-26 14:06:11 INFO Payment 577833 authorized
+2026-10-26 14:06:28 INFO GET /api/checkout 200 in 264ms
+2026-10-26 14:06:56 INFO GET /api/checkout 200 in 83ms
+2026-10-26 14:07:08 INFO GET /api/cart 200 in 233ms
+2026-10-26 14:07:23 INFO Order 747547 created for user-1020
+2026-10-26 14:07:59 INFO User user-1346 logged out
+2026-10-26 14:08:35 INFO Payment 257555 authorized
+2026-10-26 14:09:01 INFO User user-1218 logged in
+2026-10-26 14:09:05 WARNING Deprecated API version v1 called
+2026-10-26 14:09:43 INFO User user-1229 logged out
+2026-10-26 14:10:08 DEBUG Connection pool: 6/50 in use
+2026-10-26 14:10:39 INFO Order 141043 created for user-1169
+2026-10-26 14:11:11 INFO Scheduled job report-builder completed in 37s
+2026-10-26 14:11:38 INFO Order 685758 shipped
+2026-10-26 14:11:57 INFO Payment 307764 authorized
+2026-10-26 14:12:01 INFO POST /api/checkout 201 in 325ms
+2026-10-26 14:12:22 WARNING Response time above 2s for /api/checkout
+2026-10-26 14:12:51 DEBUG Cache hit ratio: 0.89
+2026-10-26 14:13:25 INFO Order 866650 shipped
+2026-10-26 14:13:45 ERROR Failed to process payment: timeout
+2026-10-26 14:13:59 WARNING Deprecated API version v1 called
+2026-10-26 14:14:34 WARNING Deprecated API version v1 called
+2026-10-26 14:14:39 DEBUG Cache miss for product 1539
+2026-10-26 14:15:02 DEBUG SQL query took 74ms
+2026-10-26 14:15:36 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 14:16:06 INFO POST /api/products 201 in 461ms
+2026-10-26 14:16:17 DEBUG Cache hit ratio: 0.90
+2026-10-26 14:16:51 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 14:16:58 DEBUG Cache miss for product 3821
+2026-10-26 14:17:13 WARNING Deprecated API version v1 called
+2026-10-26 14:17:36 INFO Payment 350682 authorized
+2026-10-26 14:18:06 WARNING Slow query detected: 2764ms
+2026-10-26 14:18:44 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 14:19:18 INFO Payment 214691 authorized
+2026-10-26 14:19:46 DEBUG Session 73958901 refreshed
+2026-10-26 14:19:59 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 14:20:07 INFO User user-1038 logged out
+2026-10-26 14:20:22 INFO User user-1351 logged in
+2026-10-26 14:20:42 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 14:20:58 INFO Email sent to user-1056
+2026-10-26 14:21:24 INFO User user-1320 logged in
+2026-10-26 14:21:33 INFO Order 124048 shipped
+2026-10-26 14:21:37 ERROR Payment retry failed
+2026-10-26 14:22:00 WARNING Disk usage at 83%
+2026-10-26 14:22:06 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 14:22:34 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 14:22:47 INFO Order 795334 shipped
+2026-10-26 14:23:09 ERROR Cache eviction failed
+2026-10-26 14:23:40 INFO Email sent to user-1199
+2026-10-26 14:24:11 INFO Order 447848 shipped
+2026-10-26 14:24:18 DEBUG Cache hit ratio: 0.63
+2026-10-26 14:24:24 INFO Order 815974 shipped
+2026-10-26 14:24:30 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 14:25:05 DEBUG Session 80187724 refreshed
+2026-10-26 14:25:11 INFO Payment 154826 authorized
+2026-10-26 14:25:32 INFO Order 507228 shipped
+2026-10-26 14:25:52 INFO User user-1340 logged out
+2026-10-26 14:26:17 DEBUG SQL query took 74ms
+2026-10-26 14:26:52 INFO Order 205547 shipped
+2026-10-26 14:27:25 INFO Email sent to user-1003
+2026-10-26 14:27:52 DEBUG Cache hit ratio: 0.63
+2026-10-26 14:28:23 DEBUG Cache miss for product 1676
+2026-10-26 14:28:49 DEBUG Connection pool: 18/50 in use
+2026-10-26 14:29:14 INFO Scheduled job invoice-export completed in 2s
+2026-10-26 14:29:22 DEBUG Connection pool: 17/50 in use
+2026-10-26 14:29:44 INFO User user-1198 logged in
+2026-10-26 14:30:07 INFO User user-1189 logged out
+2026-10-26 14:30:39 WARNING Retrying request to inventory-service (attempt 2)
+2026-10-26 14:31:02 INFO GET /api/checkout 200 in 58ms
+2026-10-26 14:31:07 INFO POST /api/checkout 201 in 318ms
+2026-10-26 14:31:30 WARNING Disk usage at 84%
+2026-10-26 14:32:02 DEBUG Session 29078790 refreshed
+2026-10-26 14:32:30 DEBUG Connection pool: 5/50 in use
+2026-10-26 14:32:36 INFO Scheduled job report-builder completed in 34s
+2026-10-26 14:32:52 ERROR Inventory service returned 503
+    at com.example.orders.OrderService.place(OrderService.java:211)
+    at com.example.payment.PaymentController.checkout(PaymentController.java:88)
+Caused by: java.net.SocketTimeoutException: Read timed out
+2026-10-26 14:33:18 INFO GET /api/checkout 200 in 121ms
+2026-10-26 14:33:32 INFO Order 933817 shipped
+2026-10-26 14:33:56 DEBUG SQL query took 13ms
+2026-10-26 14:34:05 DEBUG SQL query took 8ms
+2026-10-26 14:34:15 DEBUG Connection pool: 17/50 in use
+2026-10-26 14:34:49 INFO Order 858267 shipped
+2026-10-26 14:35:21 DEBUG Connection pool: 18/50 in use
+2026-10-26 14:35:43 ERROR Inventory service returned 503
+2026-10-26 14:36:07 INFO Payment 997990 authorized
+2026-10-26 14:36:13 INFO Scheduled job report-builder completed in 43s
+2026-10-26 14:36:26 WARNING Disk usage at 88%
+2026-10-26 14:36:44 INFO Scheduled job report-builder completed in 61s
+2026-10-26 14:37:00 ERROR Could not send email: SMTP connection refused
+2026-10-26 14:37:37 INFO Payment 435197 authorized
+2026-10-26 14:38:06 WARNING Disk usage at 84%
+2026-10-26 14:38:27 INFO Order 857142 created for user-1294
+2026-10-26 14:38:59 INFO Scheduled job email-digest completed in 14s
+2026-10-26 14:39:08 INFO Order 154058 shipped
+2026-10-26 14:39:27 INFO Order 665728 shipped
+2026-10-26 14:39:55 INFO User user-1293 logged out
+2026-10-26 14:40:03 DEBUG Connection pool: 11/50 in use
+2026-10-26 14:40:27 DEBUG Cache hit ratio: 0.89
+2026-10-26 14:40:32 INFO Order 143424 created for user-1320
+2026-10-26 14:40:46 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 14:41:11 DEBUG Cache hit ratio: 0.89
+2026-10-26 14:41:30 INFO Scheduled job invoice-export completed in 18s
+2026-10-26 14:42:04 INFO User user-1201 logged out
+2026-10-26 14:42:42 DEBUG Cache miss for product 4974
+2026-10-26 14:42:48 INFO Order 575970 created for user-1374
+2026-10-26 14:43:22 INFO POST /api/cart 201 in 169ms
+2026-10-26 14:43:33 WARNING Slow query detected: 1988ms
+2026-10-26 14:43:41 INFO Payment 224880 authorized
+2026-10-26 14:43:52 INFO User user-1323 logged in
+2026-10-26 14:44:19 WARNING Retrying request to inventory-service (attempt 3)
+2026-10-26 14:44:49 WARNING Response time above 2s for /api/products
+2026-10-26 14:45:01 WARNING Slow query detected: 2689ms
+2026-10-26 14:45:06 INFO Email sent to user-1100
+2026-10-26 14:45:32 DEBUG SQL query took 60ms
+2026-10-26 14:45:47 DEBUG Cache miss for product 1514
+2026-10-26 14:45:58 INFO Order 176777 created for user-1384
+2026-10-26 14:46:34 DEBUG Session 23653705 refreshed
+2026-10-26 14:46:55 INFO Scheduled job report-builder completed in 80s
+2026-10-26 14:47:19 INFO GET /api/search 200 in 332ms
+2026-10-26 14:47:36 DEBUG SQL query took 117ms
+2026-10-26 14:47:47 INFO POST /api/users 201 in 575ms
+2026-10-26 14:48:18 INFO User user-1196 logged out
+2026-10-26 14:48:55 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 14:49:33 INFO Order 785172 created for user-1223
+2026-10-26 14:50:01 DEBUG Cache hit ratio: 0.99
+2026-10-26 14:50:15 INFO Order 683088 shipped
+2026-10-26 14:50:20 WARNING Slow query detected: 3562ms
+2026-10-26 14:50:38 INFO User user-1347 logged in
+2026-10-26 14:51:13 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 14:51:31 INFO POST /api/checkout 201 in 393ms
+2026-10-26 14:51:36 INFO POST /api/cart 201 in 595ms
+2026-10-26 14:51:57 INFO User user-1017 logged in
+2026-10-26 14:52:10 INFO Order 808296 shipped
+2026-10-26 14:52:43 INFO POST /api/products 201 in 169ms
+2026-10-26 14:53:00 INFO Payment 831402 authorized
+2026-10-26 14:53:07 INFO Email sent to user-1250
+2026-10-26 14:53:36 INFO Payment 664979 authorized
+2026-10-26 14:53:58 WARNING Deprecated API version v1 called
+2026-10-26 14:54:08 INFO User user-1293 logged in
+2026-10-26 14:54:13 INFO POST /api/users 201 in 587ms
+2026-10-26 14:54:24 DEBUG Cache miss for product 2215
+2026-10-26 14:54:36 WARNING Deprecated API version v1 called
+2026-10-26 14:54:57 INFO User user-1234 logged out
+2026-10-26 14:55:27 INFO POST /api/checkout 201 in 242ms
+2026-10-26 14:56:04 INFO Payment 306893 authorized
+2026-10-26 14:56:41 INFO Email sent to user-1051
+2026-10-26 14:57:14 WARNING Slow query detected: 1889ms
+2026-10-26 14:57:48 INFO Scheduled job stock-sync completed in 82s
+2026-10-26 14:58:08 DEBUG Cache miss for product 3457
+2026-10-26 14:58:22 INFO POST /api/products 201 in 267ms
+2026-10-26 14:58:32 ERROR Cache eviction failed
+    at java.base/java.lang.Thread.run(Thread.java:1583)
+    at com.example.db.ConnectionPool.acquire(ConnectionPool.java:57)
+Caused by: java.net.ConnectException: Connection refused
+2026-10-26 14:58:45 INFO GET /api/products 200 in 279ms
+2026-10-26 14:58:55 INFO User user-1195 logged out
+2026-10-26 14:59:01 INFO Payment 667056 authorized
+2026-10-26 14:59:17 DEBUG Session 51594221 refreshed
+2026-10-26 14:59:48 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 15:00:25 INFO Order 257883 created for user-1101
+2026-10-26 15:00:35 INFO Order 615873 shipped
+2026-10-26 15:00:49 INFO Scheduled job stock-sync completed in 31s
+2026-10-26 15:01:22 DEBUG Cache hit ratio: 0.69
+2026-10-26 15:01:50 INFO Email sent to user-1152
+2026-10-26 15:02:04 INFO Email sent to user-1360
+2026-10-26 15:02:22 ERROR Failed to process payment: timeout
+2026-10-26 15:02:53 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 15:03:17 WARNING Response time above 2s for /api/cart
+2026-10-26 15:03:32 DEBUG SQL query took 78ms
+2026-10-26 15:04:03 DEBUG Cache hit ratio: 0.85
+2026-10-26 15:04:18 INFO POST /api/search 201 in 407ms
+2026-10-26 15:04:46 INFO Order 203328 shipped
+2026-10-26 15:04:55 DEBUG Connection pool: 4/50 in use
+2026-10-26 15:05:21 INFO User user-1164 logged in
+2026-10-26 15:05:26 DEBUG Cache hit ratio: 0.66
+2026-10-26 15:05:52 WARNING Slow query detected: 2594ms
+2026-10-26 15:06:19 WARNING Response time above 2s for /api/checkout
+2026-10-26 15:06:46 DEBUG Connection pool: 18/50 in use
+2026-10-26 15:07:16 DEBUG Session 44315544 refreshed
+2026-10-26 15:07:51 ERROR Payment retry failed
+2026-10-26 15:08:21 INFO Scheduled job stock-sync completed in 32s
+2026-10-26 15:08:55 INFO User user-1200 logged in
+2026-10-26 15:09:12 INFO GET /api/orders 200 in 112ms
+2026-10-26 15:09:47 INFO GET /api/search 200 in 234ms
+2026-10-26 15:10:03 INFO Payment 167529 authorized
+2026-10-26 15:10:35 DEBUG SQL query took 77ms
+2026-10-26 15:11:10 INFO Order 684475 shipped
+2026-10-26 15:11:24 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 15:11:34 INFO User user-1340 logged in
+2026-10-26 15:11:42 DEBUG Session 23393619 refreshed
+2026-10-26 15:12:01 DEBUG Cache miss for product 3291
+2026-10-26 15:12:19 DEBUG Cache hit ratio: 0.78
+2026-10-26 15:12:27 INFO Scheduled job invoice-export completed in 16s
+2026-10-26 15:13:02 INFO GET /api/orders 200 in 150ms
+2026-10-26 15:13:23 INFO Order 753877 created for user-1327
+2026-10-26 15:13:27 DEBUG Session 78388476 refreshed
+2026-10-26 15:13:31 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 15:14:08 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 15:14:31 INFO User user-1391 logged out
+2026-10-26 15:14:55 DEBUG Session 48620644 refreshed
+2026-10-26 15:15:02 INFO Payment 539730 authorized
+2026-10-26 15:15:18 INFO User user-1091 logged in
+2026-10-26 15:15:54 INFO POST /api/cart 201 in 343ms
+2026-10-26 15:16:18 INFO Payment 119043 authorized
+2026-10-26 15:16:23 INFO Payment 835936 authorized
+2026-10-26 15:16:30 INFO User user-1091 logged in
+2026-10-26 15:16:38 INFO Order 425888 created for user-1304
+2026-10-26 15:16:55 INFO POST /api/orders 201 in 274ms
+2026-10-26 15:17:33 INFO Email sent to user-1263
+2026-10-26 15:17:46 INFO Email sent to user-1243
+2026-10-26 15:18:22 INFO User user-1223 logged in
+2026-10-26 15:18:56 INFO POST /api/search 201 in 226ms
+2026-10-26 15:19:27 DEBUG Session 26432620 refreshed
+2026-10-26 15:19:41 INFO User user-1028 logged in
+2026-10-26 15:19:48 INFO Scheduled job invoice-export completed in 40s
+2026-10-26 15:20:00 INFO User user-1038 logged out
+2026-10-26 15:20:29 INFO Email sent to user-1212
+2026-10-26 15:20:42 INFO POST /api/products 201 in 361ms
+2026-10-26 15:21:17 DEBUG SQL query took 36ms
+2026-10-26 15:21:55 INFO Payment 878643 authorized
+2026-10-26 15:22:19 DEBUG Cache hit ratio: 0.72
+2026-10-26 15:22:38 DEBUG Connection pool: 12/50 in use
+2026-10-26 15:22:45 WARNING Deprecated API version v1 called
+2026-10-26 15:23:01 DEBUG Cache miss for product 4102
+2026-10-26 15:23:20 WARNING Response time above 2s for /api/checkout
+2026-10-26 15:23:46 DEBUG Connection pool: 17/50 in use
+2026-10-26 15:23:50 INFO Email sent to user-1382
+2026-10-26 15:24:27 INFO User user-1027 logged out
+2026-10-26 15:25:05 INFO Scheduled job report-builder completed in 81s
+2026-10-26 15:25:10 INFO POST /api/users 201 in 557ms
+2026-10-26 15:25:38 INFO POST /api/cart 201 in 489ms
+2026-10-26 15:26:14 DEBUG Cache miss for product 3322
+2026-10-26 15:26:51 INFO Order 561322 created for user-1340
+2026-10-26 15:27:17 INFO User user-1149 logged out
+2026-10-26 15:27:47 INFO User user-1268 logged in
+2026-10-26 15:28:25 INFO POST /api/search 201 in 326ms
+2026-10-26 15:28:40 INFO POST /api/checkout 201 in 242ms
+2026-10-26 15:28:59 INFO Order 718926 shipped
+2026-10-26 15:29:26 INFO Order 737858 created for user-1239
+2026-10-26 15:29:57 INFO GET /api/search 200 in 258ms
+2026-10-26 15:30:32 INFO Email sent to user-1380
+2026-10-26 15:31:09 WARNING Deprecated API version v1 called
+2026-10-26 15:31:45 INFO Order 321539 created for user-1200
+2026-10-26 15:32:20 DEBUG SQL query took 48ms
+2026-10-26 15:32:33 INFO POST /api/cart 201 in 493ms
+2026-10-26 15:33:09 DEBUG SQL query took 72ms
+2026-10-26 15:33:16 INFO Payment 202308 authorized
+2026-10-26 15:33:41 DEBUG Session 80877594 refreshed
+2026-10-26 15:33:46 WARNING Disk usage at 90%
+2026-10-26 15:34:22 INFO GET /api/checkout 200 in 88ms
+2026-10-26 15:34:37 WARNING Deprecated API version v1 called
+2026-10-26 15:34:58 WARNING Response time above 2s for /api/products
+2026-10-26 15:35:26 DEBUG Cache hit ratio: 0.83
+2026-10-26 15:35:35 INFO Scheduled job stock-sync completed in 84s
+2026-10-26 15:36:08 WARNING Deprecated API version v1 called
+2026-10-26 15:36:24 WARNING Slow query detected: 2644ms
+2026-10-26 15:36:58 WARNING Deprecated API version v1 called
+2026-10-26 15:37:31 INFO Scheduled job stock-sync completed in 87s
+2026-10-26 15:37:53 INFO Payment 818825 authorized
+2026-10-26 15:38:06 DEBUG SQL query took 7ms
+2026-10-26 15:38:35 ERROR Failed to process payment: timeout
+    at com.example.payment.PaymentService.charge(PaymentService.java:142)
+    at com.example.payment.PaymentController.checkout(PaymentController.java:88)
+    at com.example.orders.OrderService.place(OrderService.java:211)
+2026-10-26 15:38:44 DEBUG Session 34678914 refreshed
+2026-10-26 15:38:54 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 15:39:11 DEBUG Cache miss for product 581
+2026-10-26 15:39:18 INFO Email sent to user-1234
+2026-10-26 15:39:39 INFO Payment 204015 authorized
+2026-10-26 15:40:06 DEBUG Connection pool: 7/50 in use
+2026-10-26 15:40:18 WARNING Slow query detected: 3330ms
+2026-10-26 15:40:35 INFO User user-1151 logged out
+2026-10-26 15:41:01 DEBUG Cache miss for product 1618
+2026-10-26 15:41:34 INFO POST /api/users 201 in 225ms
+2026-10-26 15:41:38 INFO GET /api/cart 200 in 148ms
+2026-10-26 15:42:11 DEBUG SQL query took 97ms
+2026-10-26 15:42:29 WARNING Slow query detected: 3287ms
+2026-10-26 15:42:50 INFO GET /api/products 200 in 111ms
+2026-10-26 15:43:10 DEBUG Cache miss for product 2235
+2026-10-26 15:43:17 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 15:43:51 INFO Payment 474929 authorized
+2026-10-26 15:44:00 INFO Email sent to user-1345
+2026-10-26 15:44:32 DEBUG Session 98001672 refreshed
+2026-10-26 15:44:59 INFO User user-1304 logged out
+2026-10-26 15:45:11 INFO Order 848972 shipped
+2026-10-26 15:45:32 DEBUG Cache hit ratio: 0.78
+2026-10-26 15:45:49 INFO Order 191962 shipped
+2026-10-26 15:46:11 INFO GET /api/orders 200 in 189ms
+2026-10-26 15:46:41 INFO Payment 996501 authorized
+2026-10-26 15:47:13 INFO GET /api/cart 200 in 135ms
+2026-10-26 15:47:31 INFO User user-1380 logged in
+2026-10-26 15:48:03 INFO Order 360397 created for user-1152
+2026-10-26 15:48:21 WARNING Deprecated API version v1 called
+2026-10-26 15:48:47 INFO GET /api/search 200 in 185ms
+2026-10-26 15:49:22 INFO GET /api/checkout 200 in 326ms
+2026-10-26 15:49:44 INFO User user-1117 logged out
+2026-10-26 15:49:51 WARNING Deprecated API version v1 called
+2026-10-26 15:50:26 DEBUG Session 34157006 refreshed
+2026-10-26 15:50:45 DEBUG SQL query took 110ms
+2026-10-26 15:50:56 INFO User user-1291 logged in
+2026-10-26 15:51:29 DEBUG Connection pool: 3/50 in use
+2026-10-26 15:51:33 INFO Scheduled job invoice-export completed in 21s
+2026-10-26 15:51:45 INFO Scheduled job report-builder completed in 62s
+2026-10-26 15:51:55 WARNING Deprecated API version v1 called
+2026-10-26 15:52:15 WARNING Disk usage at 80%
+2026-10-26 15:52:40 DEBUG Cache hit ratio: 0.65
+2026-10-26 15:53:12 WARNING Slow query detected: 3022ms
+2026-10-26 15:53:18 INFO Order 735371 shipped
+2026-10-26 15:53:27 INFO Payment 164807 authorized
+2026-10-26 15:53:59 DEBUG Cache miss for product 2105
+2026-10-26 15:54:23 WARNING Deprecated API version v1 called
+2026-10-26 15:54:56 DEBUG SQL query took 69ms
+2026-10-26 15:55:29 INFO Order 115766 created for user-1040
+2026-10-26 15:55:37 INFO Email sent to user-1183
+2026-10-26 15:55:44 DEBUG Session 92780848 refreshed
+2026-10-26 15:55:55 INFO User user-1036 logged in
+2026-10-26 15:56:29 INFO User user-1153 logged out
+2026-10-26 15:56:52 DEBUG Session 69618471 refreshed
+2026-10-26 15:57:03 INFO User user-1204 logged out
+2026-10-26 15:57:10 INFO Email sent to user-1131
+2026-10-26 15:57:14 INFO Order 486385 shipped
+2026-10-26 15:57:19 DEBUG SQL query took 76ms
+2026-10-26 15:57:31 INFO Email sent to user-1262
+2026-10-26 15:57:45 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 15:58:22 INFO Order 627232 shipped
+2026-10-26 15:58:39 INFO GET /api/users 200 in 151ms
+2026-10-26 15:58:56 DEBUG Cache hit ratio: 0.88
+2026-10-26 15:59:16 INFO User user-1177 logged out
+2026-10-26 15:59:51 INFO POST /api/search 201 in 395ms
+2026-10-26 16:00:12 INFO User user-1010 logged out
+2026-10-26 16:00:25 DEBUG Connection pool: 5/50 in use
+2026-10-26 16:00:41 INFO Email sent to user-1336
+2026-10-26 16:01:05 INFO Order 128635 shipped
+2026-10-26 16:01:40 INFO Scheduled job stock-sync completed in 43s
+2026-10-26 16:01:58 INFO User user-1289 logged in
+2026-10-26 16:02:21 INFO Payment 583972 authorized
+2026-10-26 16:02:46 INFO Order 404799 shipped
+2026-10-26 16:03:03 INFO Order 941736 created for user-1118
+2026-10-26 16:03:21 INFO Payment 477307 authorized
+2026-10-26 16:03:46 INFO User user-1234 logged in
+2026-10-26 16:03:54 INFO Order 246012 shipped
+2026-10-26 16:04:11 WARNING Disk usage at 85%
+2026-10-26 16:04:35 DEBUG Cache hit ratio: 0.68
+2026-10-26 16:05:12 INFO GET /api/products 200 in 45ms
+2026-10-26 16:05:18 INFO GET /api/users 200 in 91ms
+2026-10-26 16:05:55 DEBUG Cache hit ratio: 0.87
+2026-10-26 16:05:59 INFO Order 336857 shipped
+2026-10-26 16:06:28 INFO Email sent to user-1064
+2026-10-26 16:06:40 INFO POST /api/cart 201 in 273ms
+2026-10-26 16:07:05 INFO User user-1174 logged in
+2026-10-26 16:07:38 INFO Email sent to user-1169
+2026-10-26 16:08:09 INFO POST /api/checkout 201 in 406ms
+2026-10-26 16:08:18 INFO POST /api/checkout 201 in 322ms
+2026-10-26 16:08:48 WARNING Disk usage at 88%
+2026-10-26 16:08:52 DEBUG Cache hit ratio: 0.70
+2026-10-26 16:09:29 WARNING Response time above 2s for /api/cart
+2026-10-26 16:09:42 DEBUG Cache hit ratio: 0.61
+2026-10-26 16:10:08 WARNING Response time above 2s for /api/checkout
+2026-10-26 16:10:30 INFO Payment 164446 authorized
+2026-10-26 16:11:06 DEBUG SQL query took 22ms
+2026-10-26 16:11:33 INFO Scheduled job stock-sync completed in 53s
+2026-10-26 16:12:09 WARNING Disk usage at 92%
+2026-10-26 16:12:30 WARNING Deprecated API version v1 called
+2026-10-26 16:12:34 INFO User user-1104 logged in
+2026-10-26 16:12:46 INFO Scheduled job email-digest completed in 4s
+2026-10-26 16:13:07 INFO GET /api/search 200 in 44ms
+2026-10-26 16:13:44 DEBUG SQL query took 12ms
+2026-10-26 16:13:58 DEBUG Connection pool: 11/50 in use
+2026-10-26 16:14:18 WARNING Slow query detected: 3754ms
+2026-10-26 16:14:28 INFO GET /api/cart 200 in 154ms
+2026-10-26 16:14:43 INFO Email sent to user-1055
+2026-10-26 16:14:54 INFO User user-1363 logged in
+2026-10-26 16:15:19 DEBUG Cache miss for product 3888
+2026-10-26 16:15:55 DEBUG Feature flag new-checkout evaluated to false
+2026-10-26 16:16:25 INFO Payment 952987 authorized
+2026-10-26 16:17:03 DEBUG Cache hit ratio: 0.70
+2026-10-26 16:17:28 WARNING Slow query detected: 2244ms
+2026-10-26 16:18:04 INFO User user-1380 logged out
+2026-10-26 16:18:25 WARNING Retrying request to inventory-service (attempt 1)
+2026-10-26 16:18:41 DEBUG Cache hit ratio: 0.70
+2026-10-26 16:19:14 INFO POST /api/products 201 in 233ms
+2026-10-26 16:19:38 INFO Order 632055 created for user-1086
+2026-10-26 16:19:46 INFO GET /api/users 200 in 85ms
+2026-10-26 16:20:22 DEBUG SQL query took 115ms
+2026-10-26 16:20:50 INFO User user-1012 logged out
+2026-10-26 16:21:06 INFO Order 597534 created for user-1131
+2026-10-26 16:21:16 DEBUG Session 14230554 refreshed
+2026-10-26 16:21:21 INFO Scheduled job stock-sync completed in 4s
+2026-10-26 16:21:58 INFO Order 921143 shipped
+2026-10-26 16:22:33 INFO POST /api/orders 201 in 582ms
+2026-10-26 16:22:53 DEBUG Session 75649669 refreshed
+2026-10-26 16:22:59 INFO Email sent to user-1081
+2026-10-26 16:23:28 WARNING Disk usage at 85%
+2026-10-26 16:24:06 INFO User user-1370 logged in
+2026-10-26 16:24:12 DEBUG Feature flag new-checkout evaluated to true
+2026-10-26 16:24:18 INFO Order 233102 shipped
+2026-10-26 16:24:46 INFO Order 860739 shipped
+2026-10-26 16:25:14 INFO GET /api/checkout 200 in 319ms
+2026-10-26 16:25:26 INFO User user-1086 logged out
+2026-10-26 16:25:47 INFO User user-1276 logged in
+2026-10-26 16:26:22 INFO Payment 980277 authorized
+2026-10-26 16:26:58 INFO Order 155749 shipped
+2026-10-26 16:27:29 INFO Order 371906 shipped
+2026-10-26 16:27:53 INFO Scheduled job invoice-export completed in 57s

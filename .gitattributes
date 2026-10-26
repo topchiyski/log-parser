@@ -1,0 +1,4 @@
+# Keep the wrapper scripts runnable whatever core.autocrlf is set to.
+gradlew     text eol=lf
+*.bat       text eol=crlf
+*.jar       binary
