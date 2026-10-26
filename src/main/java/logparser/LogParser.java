@@ -16,6 +16,7 @@ import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -58,13 +59,19 @@ public final class LogParser {
     // Error pattern settings
     // ---------------------------------------------------------------------
 
-    /** Minimum number of errors that counts as a spike. */
+    /**
+     * Minimum number of errors that counts as a spike.
+     */
     public static final int DEFAULT_SPIKE_THRESHOLD = 3;
 
-    /** Time span the spike threshold must be reached within. */
+    /**
+     * Time span the spike threshold must be reached within.
+     */
     public static final Duration DEFAULT_SPIKE_WINDOW = Duration.ofMinutes(5);
 
-    /** How many of the most frequent errors the alert report lists. */
+    /**
+     * How many of the most frequent errors the alert report lists.
+     */
     private static final int REPORT_TOP_ERRORS = 3;
 
     // ---------------------------------------------------------------------
@@ -87,7 +94,9 @@ public final class LogParser {
      */
     public record ErrorSpike(List<LogEntry> errors) {
 
-        /** Takes an immutable copy of the error list and rejects an empty one. */
+        /**
+         * Takes an immutable copy of the error list and rejects an empty one.
+         */
         public ErrorSpike {
             errors = List.copyOf(errors);
             if (errors.isEmpty()) {
@@ -95,17 +104,23 @@ public final class LogParser {
             }
         }
 
-        /** Returns the timestamp of the first error in the burst. */
+        /**
+         * Returns the timestamp of the first error in the burst.
+         */
         public LocalDateTime start() {
             return errors.get(0).timestamp();
         }
 
-        /** Returns the timestamp of the last error in the burst. */
+        /**
+         * Returns the timestamp of the last error in the burst.
+         */
         public LocalDateTime end() {
             return errors.get(errors.size() - 1).timestamp();
         }
 
-        /** Returns how many errors the burst contains. */
+        /**
+         * Returns how many errors the burst contains.
+         */
         public int count() {
             return errors.size();
         }
@@ -120,7 +135,7 @@ public final class LogParser {
      *
      * @param line the raw line; null is treated as malformed
      * @return the parsed entry, or empty if the line is malformed, has an
-     *         invalid date or time, or uses an unknown level
+     * invalid date or time, or uses an unknown level
      */
     public Optional<LogEntry> parseLine(String line) {
         if (line == null) {
@@ -166,7 +181,9 @@ public final class LogParser {
         return Collections.unmodifiableList(entries);
     }
 
-    /** Returns the parsed timestamp, or empty if it isn't a real date and time. */
+    /**
+     * Returns the parsed timestamp, or empty if it isn't a real date and time.
+     */
     private static Optional<LocalDateTime> parseTimestamp(String text) {
         try {
             return Optional.of(LocalDateTime.parse(text, TIMESTAMP_FORMAT));
@@ -212,7 +229,7 @@ public final class LogParser {
      *
      * @param entries the parsed entries
      * @return an unmodifiable list of repeated errors, most frequent first;
-     *         ties keep the order in which the messages first appeared
+     * ties keep the order in which the messages first appeared
      */
     public List<ErrorCount> findRepeatedErrors(List<LogEntry> entries) {
         return countErrorMessages(entries).stream()
@@ -226,7 +243,7 @@ public final class LogParser {
      * @param entries the parsed entries
      * @param limit   the maximum number of messages to return
      * @return an unmodifiable list of at most {@code limit} errors, most
-     *         frequent first; ties keep the order of first appearance
+     * frequent first; ties keep the order of first appearance
      */
     public List<ErrorCount> topErrors(List<LogEntry> entries, int limit) {
         if (limit < 0) {

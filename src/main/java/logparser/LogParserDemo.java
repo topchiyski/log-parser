@@ -2,6 +2,7 @@ package logparser;
 
 import java.util.List;
 import java.util.Map;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,7 +26,9 @@ public final class LogParserDemo {
         LogSources.load(List.of(args)).forEach((source, lines) -> analyze(parser, source, lines));
     }
 
-    /** Runs every analysis on one log and logs the results. */
+    /**
+     * Runs every analysis on one log and logs the results.
+     */
     private static void analyze(LogParser parser, String source, List<String> lines) {
         LOG.info("Analyzing {}", source);
 

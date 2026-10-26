@@ -1,7 +1,8 @@
 package logparser;
 
 import java.time.LocalDateTime;
-import java.util.Objects;
+
+import static java.util.Objects.requireNonNull;
 
 /**
  * One parsed log line.
@@ -15,10 +16,12 @@ import java.util.Objects;
  */
 public record LogEntry(LocalDateTime timestamp, LogLevel level, String message) {
 
-    /** Rejects nulls so every LogEntry in the program is complete. */
+    /**
+     * Rejects nulls so every LogEntry in the program is complete.
+     */
     public LogEntry {
-        Objects.requireNonNull(timestamp, "timestamp must not be null");
-        Objects.requireNonNull(level, "level must not be null");
-        Objects.requireNonNull(message, "message must not be null");
+        requireNonNull(timestamp, "timestamp must not be null");
+        requireNonNull(level, "level must not be null");
+        requireNonNull(message, "message must not be null");
     }
 }

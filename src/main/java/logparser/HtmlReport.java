@@ -29,13 +29,19 @@ final class HtmlReport {
     private static final DateTimeFormatter TIME_OF_DAY = DateTimeFormatter.ofPattern("HH:mm");
     private static final DateTimeFormatter DAY_AND_TIME = DateTimeFormatter.ofPattern("MM-dd HH:mm");
 
-    /** How many errors the "most frequent errors" card lists. */
+    /**
+     * How many errors the "most frequent errors" card lists.
+     */
     private static final int TOP_ERRORS = 10;
 
-    /** Caps the "all entries" table so huge logs still produce a usable page. */
+    /**
+     * Caps the "all entries" table so huge logs still produce a usable page.
+     */
     private static final int MAX_ENTRY_ROWS = 1000;
 
-    /** Candidate timeline bucket sizes; the smallest that fits MAX_BUCKETS wins. */
+    /**
+     * Candidate timeline bucket sizes; the smallest that fits MAX_BUCKETS wins.
+     */
     private static final int[] BUCKET_MINUTES = {1, 5, 15, 30, 60, 180, 360, 720, 1440};
     private static final int MAX_BUCKETS = 60;
 
@@ -80,17 +86,14 @@ final class HtmlReport {
                 <header>
                 <h1>Log report</h1>
                 """);
-        html.append("<p class=\"muted\">Generated ").append(generatedAt.format(LogParser.TIMESTAMP_FORMAT))
-                .append(" &middot; ").append(logs.size()).append(logs.size() == 1 ? " log" : " logs")
-                .append("</p>\n");
+        html.append("<p class=\"muted\">Generated ").append(generatedAt.format(LogParser.TIMESTAMP_FORMAT)).append(" &middot; ").append(logs.size()).append(logs.size() == 1 ? " log" : " logs").append("</p>\n");
 
         // With several logs, link to each section from the header.
         if (logs.size() > 1) {
             html.append("<nav>");
             int index = 0;
             for (String source : logs.keySet()) {
-                html.append("<a href=\"#log-").append(++index).append("\">")
-                        .append(escape(source)).append("</a>");
+                html.append("<a href=\"#log-").append(++index).append("\">").append(escape(source)).append("</a>");
             }
             html.append("</nav>\n");
         }
@@ -108,9 +111,10 @@ final class HtmlReport {
         return html.toString();
     }
 
-    /** Renders one log's section. */
-    private static void renderLog(StringBuilder html, LogParser parser, String id,
-                                  String source, List<String> lines) {
+    /**
+     * Renders one log's section.
+     */
+    private static void renderLog(StringBuilder html, LogParser parser, String id, String source, List<String> lines) {
         // One pass sorts every line into a parsed entry or a skipped line.
         List<LogEntry> entries = new ArrayList<>();
         Map<Integer, String> skippedLines = new LinkedHashMap<>();
@@ -135,15 +139,11 @@ final class HtmlReport {
         tile(html, "Skipped", String.valueOf(skipped), "malformed lines", skipped > 0 ? "warn" : "");
         tile(html, "Errors", String.valueOf(errors), "", errors > 0 ? "error" : "");
         tile(html, "Error rate", percent(errors, entries.size()), "of parsed entries", "");
-        tile(html, "Error spikes", String.valueOf(spikes.size()),
-                LogParser.DEFAULT_SPIKE_THRESHOLD + "+ errors in "
-                        + LogParser.DEFAULT_SPIKE_WINDOW.toMinutes() + " min",
-                spikes.isEmpty() ? "" : "error");
+        tile(html, "Error spikes", String.valueOf(spikes.size()), LogParser.DEFAULT_SPIKE_THRESHOLD + "+ errors in " + LogParser.DEFAULT_SPIKE_WINDOW.toMinutes() + " min", spikes.isEmpty() ? "" : "error");
         if (!entries.isEmpty()) {
             LocalDateTime first = earliest(entries);
             LocalDateTime last = latest(entries);
-            tile(html, "Time span", formatDuration(Duration.between(first, last)),
-                    first.format(LogParser.TIMESTAMP_FORMAT) + " to " + last.format(LogParser.TIMESTAMP_FORMAT), "");
+            tile(html, "Time span", formatDuration(Duration.between(first, last)), first.format(LogParser.TIMESTAMP_FORMAT) + " to " + last.format(LogParser.TIMESTAMP_FORMAT), "");
         }
         html.append("</div>\n");
 
@@ -173,9 +173,7 @@ final class HtmlReport {
     // ---------------------------------------------------------------------
 
     private static void tile(StringBuilder html, String label, String value, String note, String cssClass) {
-        html.append("<div class=\"tile ").append(cssClass).append("\">")
-                .append("<div class=\"label\">").append(escape(label)).append("</div>")
-                .append("<div class=\"value\">").append(escape(value)).append("</div>");
+        html.append("<div class=\"tile ").append(cssClass).append("\">").append("<div class=\"label\">").append(escape(label)).append("</div>").append("<div class=\"value\">").append(escape(value)).append("</div>");
         if (!note.isEmpty()) {
             html.append("<div class=\"note\">").append(escape(note)).append("</div>");
         }
@@ -184,14 +182,7 @@ final class HtmlReport {
 
     private static void renderLevelBreakdown(StringBuilder html, Map<LogLevel, Integer> counts, int total) {
         html.append("<div class=\"card\"><h3>Entries by level</h3>\n");
-        counts.forEach((level, count) -> html
-                .append("<div class=\"bar-row\">")
-                .append(badge(level))
-                .append("<div class=\"track\"><div class=\"fill bg-").append(level).append("\" style=\"width:")
-                .append(number(total == 0 ? 0 : 100.0 * count / total)).append("%\"></div></div>")
-                .append("<div class=\"num\">").append(count).append(" <span class=\"muted\">(")
-                .append(percent(count, total)).append(")</span></div>")
-                .append("</div>\n"));
+        counts.forEach((level, count) -> html.append("<div class=\"bar-row\">").append(badge(level)).append("<div class=\"track\"><div class=\"fill bg-").append(level).append("\" style=\"width:").append(number(total == 0 ? 0 : 100.0 * count / total)).append("%\"></div></div>").append("<div class=\"num\">").append(count).append(" <span class=\"muted\">(").append(percent(count, total)).append(")</span></div>").append("</div>\n"));
         html.append("</div>\n");
     }
 
@@ -202,15 +193,10 @@ final class HtmlReport {
             return;
         }
         long max = topErrors.get(0).count();
-        html.append("<div class=\"table-wrap\"><table><thead><tr>")
-                .append("<th>#</th><th>Message</th><th class=\"num\">Count</th></tr></thead><tbody>\n");
+        html.append("<div class=\"table-wrap\"><table><thead><tr>").append("<th>#</th><th>Message</th><th class=\"num\">Count</th></tr></thead><tbody>\n");
         for (int i = 0; i < topErrors.size(); i++) {
             LogParser.ErrorCount error = topErrors.get(i);
-            html.append("<tr><td>").append(i + 1).append("</td><td>")
-                    .append(escape(error.message()))
-                    .append("<div class=\"track thin\"><div class=\"fill bg-ERROR\" style=\"width:")
-                    .append(number(100.0 * error.count() / max)).append("%\"></div></div></td>")
-                    .append("<td class=\"num\">").append(error.count()).append("</td></tr>\n");
+            html.append("<tr><td>").append(i + 1).append("</td><td>").append(escape(error.message())).append("<div class=\"track thin\"><div class=\"fill bg-ERROR\" style=\"width:").append(number(100.0 * error.count() / max)).append("%\"></div></div></td>").append("<td class=\"num\">").append(error.count()).append("</td></tr>\n");
         }
         html.append("</tbody></table></div>\n</div>\n");
     }
@@ -221,45 +207,27 @@ final class HtmlReport {
             html.append("<p class=\"empty\">No error spikes detected.</p>\n</div>\n");
             return;
         }
-        html.append("<div class=\"table-wrap\"><table><thead><tr>")
-                .append("<th>From</th><th>To</th><th class=\"num\">Duration</th>")
-                .append("<th class=\"num\">Errors</th><th>Messages</th></tr></thead><tbody>\n");
+        html.append("<div class=\"table-wrap\"><table><thead><tr>").append("<th>From</th><th>To</th><th class=\"num\">Duration</th>").append("<th class=\"num\">Errors</th><th>Messages</th></tr></thead><tbody>\n");
         for (LogParser.ErrorSpike spike : spikes) {
             // Distinct messages in the burst, most frequent first.
-            Map<String, Long> messages = spike.errors().stream()
-                    .collect(Collectors.groupingBy(LogEntry::message, LinkedHashMap::new, Collectors.counting()));
-            html.append("<tr><td>").append(spike.start().format(LogParser.TIMESTAMP_FORMAT)).append("</td>")
-                    .append("<td>").append(spike.end().format(LogParser.TIMESTAMP_FORMAT)).append("</td>")
-                    .append("<td class=\"num\">")
-                    .append(formatDuration(Duration.between(spike.start(), spike.end()))).append("</td>")
-                    .append("<td class=\"num\">").append(spike.count()).append("</td><td>");
-            messages.entrySet().stream()
-                    .sorted(Map.Entry.<String, Long>comparingByValue().reversed())
-                    .forEach(m -> html.append(escape(m.getKey()))
-                            .append(" <span class=\"muted\">&times;").append(m.getValue()).append("</span><br>"));
+            Map<String, Long> messages = spike.errors().stream().collect(Collectors.groupingBy(LogEntry::message, LinkedHashMap::new, Collectors.counting()));
+            html.append("<tr><td>").append(spike.start().format(LogParser.TIMESTAMP_FORMAT)).append("</td>").append("<td>").append(spike.end().format(LogParser.TIMESTAMP_FORMAT)).append("</td>").append("<td class=\"num\">").append(formatDuration(Duration.between(spike.start(), spike.end()))).append("</td>").append("<td class=\"num\">").append(spike.count()).append("</td><td>");
+            messages.entrySet().stream().sorted(Map.Entry.<String, Long>comparingByValue().reversed()).forEach(m -> html.append(escape(m.getKey())).append(" <span class=\"muted\">&times;").append(m.getValue()).append("</span><br>"));
             html.append("</td></tr>\n");
         }
         html.append("</tbody></table></div>\n</div>\n");
     }
 
-    /** Lists skipped lines by line number; renders nothing if every line parsed. */
+    /**
+     * Lists skipped lines by line number; renders nothing if every line parsed.
+     */
     private static void renderSkippedLines(StringBuilder html, Map<Integer, String> skippedLines) {
         if (skippedLines.isEmpty()) {
             return;
         }
         // Collapsed by default: real logs can have hundreds of stack-trace lines.
-        html.append("<div class=\"card\"><details><summary>Skipped lines (").append(skippedLines.size())
-                .append(")</summary>\n")
-                .append("<p class=\"muted\">These lines didn't match <code>YYYY-MM-DD HH:MM:SS LEVEL Message</code>,")
-                .append(" had an impossible date, or used an unknown level.</p>\n")
-                .append("<div class=\"table-wrap\"><table><thead><tr><th class=\"num\">Line</th><th>Content</th>")
-                .append("</tr></thead><tbody>\n");
-        skippedLines.forEach((lineNumber, line) -> html
-                .append("<tr><td class=\"num\">").append(lineNumber).append("</td><td>")
-                .append(line.isBlank()
-                        ? "<span class=\"empty\">(blank line)</span>"
-                        : "<code>" + escape(line) + "</code>")
-                .append("</td></tr>\n"));
+        html.append("<div class=\"card\"><details><summary>Skipped lines (").append(skippedLines.size()).append(")</summary>\n").append("<p class=\"muted\">These lines didn't match <code>YYYY-MM-DD HH:MM:SS LEVEL Message</code>,").append(" had an impossible date, or used an unknown level.</p>\n").append("<div class=\"table-wrap\"><table><thead><tr><th class=\"num\">Line</th><th>Content</th>").append("</tr></thead><tbody>\n");
+        skippedLines.forEach((lineNumber, line) -> html.append("<tr><td class=\"num\">").append(lineNumber).append("</td><td>").append(line.isBlank() ? "<span class=\"empty\">(blank line)</span>" : "<code>" + escape(line) + "</code>").append("</td></tr>\n"));
         html.append("</tbody></table></div>\n</details></div>\n");
     }
 
@@ -267,22 +235,15 @@ final class HtmlReport {
         Set<LogEntry> inSpike = new HashSet<>();
         spikes.forEach(spike -> inSpike.addAll(spike.errors()));
 
-        html.append("<div class=\"card\"><details><summary>All entries (").append(entries.size())
-                .append(")</summary>\n");
+        html.append("<div class=\"card\"><details><summary>All entries (").append(entries.size()).append(")</summary>\n");
         if (!inSpike.isEmpty()) {
             html.append("<p class=\"muted\">Highlighted rows are part of an error spike.</p>\n");
         }
-        html.append("<div class=\"table-wrap\"><table><thead><tr>")
-                .append("<th>Time</th><th>Level</th><th>Message</th></tr></thead><tbody>\n");
-        entries.stream().limit(MAX_ENTRY_ROWS).forEach(entry -> html
-                .append(inSpike.contains(entry) ? "<tr class=\"in-spike\">" : "<tr>")
-                .append("<td class=\"nowrap\">").append(entry.timestamp().format(LogParser.TIMESTAMP_FORMAT)).append("</td>")
-                .append("<td>").append(badge(entry.level())).append("</td>")
-                .append("<td>").append(escape(entry.message())).append("</td></tr>\n"));
+        html.append("<div class=\"table-wrap\"><table><thead><tr>").append("<th>Time</th><th>Level</th><th>Message</th></tr></thead><tbody>\n");
+        entries.stream().limit(MAX_ENTRY_ROWS).forEach(entry -> html.append(inSpike.contains(entry) ? "<tr class=\"in-spike\">" : "<tr>").append("<td class=\"nowrap\">").append(entry.timestamp().format(LogParser.TIMESTAMP_FORMAT)).append("</td>").append("<td>").append(badge(entry.level())).append("</td>").append("<td>").append(escape(entry.message())).append("</td></tr>\n"));
         html.append("</tbody></table></div>\n");
         if (entries.size() > MAX_ENTRY_ROWS) {
-            html.append("<p class=\"muted\">Showing the first ").append(MAX_ENTRY_ROWS)
-                    .append(" of ").append(entries.size()).append(" entries.</p>\n");
+            html.append("<p class=\"muted\">Showing the first ").append(MAX_ENTRY_ROWS).append(" of ").append(entries.size()).append(" entries.</p>\n");
         }
         html.append("</details></div>\n");
     }
@@ -320,25 +281,17 @@ final class HtmlReport {
 
         // The wrapper scrolls sideways on phones rather than shrinking the
         // chart's text until it can't be read.
-        html.append("<div class=\"chart-wrap\"><svg viewBox=\"0 0 ").append(number(CHART_WIDTH)).append(' ').append(number(CHART_HEIGHT))
-                .append("\" role=\"img\" aria-label=\"Log entries per ").append(bucketMinutes)
-                .append(" minutes, by level\">\n");
+        html.append("<div class=\"chart-wrap\"><svg viewBox=\"0 0 ").append(number(CHART_WIDTH)).append(' ').append(number(CHART_HEIGHT)).append("\" role=\"img\" aria-label=\"Log entries per ").append(bucketMinutes).append(" minutes, by level\">\n");
 
         // Horizontal grid lines with count labels at the top and middle.
-        for (int value : new int[] {maxTotal, maxTotal / 2}) {
+        for (int value : new int[]{maxTotal, maxTotal / 2}) {
             if (value == 0) {
                 continue;
             }
             double y = plotBottom - plotHeight * value / maxTotal;
-            html.append("<line class=\"grid-line\" x1=\"").append(number(PLOT_LEFT)).append("\" x2=\"")
-                    .append(number(CHART_WIDTH - PLOT_RIGHT)).append("\" y1=\"").append(number(y))
-                    .append("\" y2=\"").append(number(y)).append("\"/>")
-                    .append("<text x=\"").append(number(PLOT_LEFT - 6)).append("\" y=\"").append(number(y + 4))
-                    .append("\" text-anchor=\"end\">").append(value).append("</text>\n");
+            html.append("<line class=\"grid-line\" x1=\"").append(number(PLOT_LEFT)).append("\" x2=\"").append(number(CHART_WIDTH - PLOT_RIGHT)).append("\" y1=\"").append(number(y)).append("\" y2=\"").append(number(y)).append("\"/>").append("<text x=\"").append(number(PLOT_LEFT - 6)).append("\" y=\"").append(number(y + 4)).append("\" text-anchor=\"end\">").append(value).append("</text>\n");
         }
-        html.append("<line class=\"axis\" x1=\"").append(number(PLOT_LEFT)).append("\" x2=\"")
-                .append(number(CHART_WIDTH - PLOT_RIGHT)).append("\" y1=\"").append(number(plotBottom))
-                .append("\" y2=\"").append(number(plotBottom)).append("\"/>\n");
+        html.append("<line class=\"axis\" x1=\"").append(number(PLOT_LEFT)).append("\" x2=\"").append(number(CHART_WIDTH - PLOT_RIGHT)).append("\" y1=\"").append(number(plotBottom)).append("\" y2=\"").append(number(plotBottom)).append("\"/>\n");
 
         // Spike bands go first so the bars are drawn on top of them. Each band
         // covers every whole bucket its spike touches, so it lines up with the
@@ -348,11 +301,7 @@ final class HtmlReport {
             long lastBucket = Duration.between(start, spike.end()).toMinutes() / bucketMinutes;
             double x1 = PLOT_LEFT + slot * firstBucket;
             double x2 = PLOT_LEFT + slot * (lastBucket + 1);
-            html.append("<rect class=\"spike-band\" x=\"").append(number(x1)).append("\" y=\"")
-                    .append(number(PLOT_TOP)).append("\" width=\"").append(number(x2 - x1))
-                    .append("\" height=\"").append(number(plotHeight)).append("\"><title>Error spike: ")
-                    .append(spike.count()).append(" errors, ").append(spike.start().format(LogParser.TIMESTAMP_FORMAT))
-                    .append(" to ").append(spike.end().format(LogParser.TIMESTAMP_FORMAT)).append("</title></rect>\n");
+            html.append("<rect class=\"spike-band\" x=\"").append(number(x1)).append("\" y=\"").append(number(PLOT_TOP)).append("\" width=\"").append(number(x2 - x1)).append("\" height=\"").append(number(plotHeight)).append("\"><title>Error spike: ").append(spike.count()).append(" errors, ").append(spike.start().format(LogParser.TIMESTAMP_FORMAT)).append(" to ").append(spike.end().format(LogParser.TIMESTAMP_FORMAT)).append("</title></rect>\n");
         }
 
         // One stacked bar per bucket, levels stacked bottom-up in enum order.
@@ -372,9 +321,7 @@ final class HtmlReport {
                 }
                 double height = plotHeight * count / maxTotal;
                 y -= height;
-                html.append("<rect class=\"f-").append(level).append("\" x=\"").append(number(x))
-                        .append("\" y=\"").append(number(y)).append("\" width=\"").append(number(width))
-                        .append("\" height=\"").append(number(height)).append("\"/>");
+                html.append("<rect class=\"f-").append(level).append("\" x=\"").append(number(x)).append("\" y=\"").append(number(y)).append("\" width=\"").append(number(width)).append("\" height=\"").append(number(height)).append("\"/>");
                 tooltip.append(", ").append(count).append(' ').append(level);
             }
             html.append("<title>").append(escape(tooltip.toString())).append("</title></g>\n");
@@ -385,12 +332,8 @@ final class HtmlReport {
         for (int bucket : new TreeSet<>(List.of(0, bucketCount / 2, bucketCount - 1))) {
             LocalDateTime bucketTime = start.plusMinutes(bucket * bucketMinutes);
             String anchor = bucket == 0 ? "start" : bucket == bucketCount - 1 ? "end" : "middle";
-            double x = bucket == 0 ? PLOT_LEFT
-                    : bucket == bucketCount - 1 ? CHART_WIDTH - PLOT_RIGHT
-                    : PLOT_LEFT + slot * (bucket + 0.5);
-            html.append("<text x=\"").append(number(x)).append("\" y=\"").append(number(CHART_HEIGHT - 8))
-                    .append("\" text-anchor=\"").append(anchor).append("\">")
-                    .append(bucketTime.format(multiDay ? DAY_AND_TIME : TIME_OF_DAY)).append("</text>\n");
+            double x = bucket == 0 ? PLOT_LEFT : bucket == bucketCount - 1 ? CHART_WIDTH - PLOT_RIGHT : PLOT_LEFT + slot * (bucket + 0.5);
+            html.append("<text x=\"").append(number(x)).append("\" y=\"").append(number(CHART_HEIGHT - 8)).append("\" text-anchor=\"").append(anchor).append("\">").append(bucketTime.format(multiDay ? DAY_AND_TIME : TIME_OF_DAY)).append("</text>\n");
         }
         html.append("</svg></div>\n");
 
@@ -406,7 +349,9 @@ final class HtmlReport {
         html.append("</div>\n");
     }
 
-    /** Picks the smallest bucket size that keeps the chart to MAX_BUCKETS bars. */
+    /**
+     * Picks the smallest bucket size that keeps the chart to MAX_BUCKETS bars.
+     */
     private static long bucketMinutes(long spanMinutes) {
         for (int minutes : BUCKET_MINUTES) {
             if ((spanMinutes + minutes - 1) / minutes <= MAX_BUCKETS) {
@@ -418,7 +363,9 @@ final class HtmlReport {
         return days * 1440;
     }
 
-    /** Rounds down to a bucket boundary counted from midnight, so labels fall on round times. */
+    /**
+     * Rounds down to a bucket boundary counted from midnight, so labels fall on round times.
+     */
     private static LocalDateTime bucketStart(LocalDateTime time, long bucketMinutes) {
         LocalDateTime midnight = time.truncatedTo(ChronoUnit.DAYS);
         if (bucketMinutes >= 1440) {
@@ -457,7 +404,9 @@ final class HtmlReport {
         return number(total == 0 ? 0 : 100.0 * part / total) + "%";
     }
 
-    /** Formats a duration as its two largest units, e.g. "1h 5m" or "3m 45s". */
+    /**
+     * Formats a duration as its two largest units, e.g. "1h 5m" or "3m 45s".
+     */
     static String formatDuration(Duration duration) {
         long days = duration.toDays();
         int hours = duration.toHoursPart();
@@ -475,7 +424,9 @@ final class HtmlReport {
         return seconds + "s";
     }
 
-    /** Escapes text for use in HTML element content and quoted attributes. */
+    /**
+     * Escapes text for use in HTML element content and quoted attributes.
+     */
     static String escape(String text) {
         StringBuilder escaped = new StringBuilder(text.length());
         for (char c : text.toCharArray()) {
@@ -495,9 +446,11 @@ final class HtmlReport {
     // Styles
     // ---------------------------------------------------------------------
 
-    /** Page styles. Colours are CSS variables, redefined for dark mode. */
+    /**
+     * Page styles. Colours are CSS variables, redefined for dark mode.
+     */
     private static final String CSS = """
-
+            
             :root {
               --bg: #f5f6f8; --card: #ffffff; --text: #1b1f24; --muted: #5f6b7a; --border: #dde2e8;
               --debug: #8a94a3; --info: #2f6fdb; --warning: #c98000; --error: #d93a3a;

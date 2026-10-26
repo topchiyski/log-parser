@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,7 +25,9 @@ public final class LogReportApp {
 
     private static final Logger LOG = LoggerFactory.getLogger(LogReportApp.class);
 
-    /** Where the report is written, relative to the working directory. */
+    /**
+     * Where the report is written, relative to the working directory.
+     */
     static final Path OUTPUT = Path.of("build", "reports", "log-report", "index.html");
 
     private static final String NO_OPEN = "--no-open";
@@ -54,7 +57,9 @@ public final class LogReportApp {
         }
     }
 
-    /** Opens the report in the default browser, or says where to find it. */
+    /**
+     * Opens the report in the default browser, or says where to find it.
+     */
     private static void openInBrowser(URI uri) {
         if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
             try {
